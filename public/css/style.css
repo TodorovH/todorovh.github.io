@@ -208,8 +208,12 @@ ul li:before{
 		vertical-align: 2px;
 	}
 
+	#period-container div:last-child {
+		margin-bottom: 0px;
+	}
+
 	#period-container div:last-child div:first-child {
-		margin-top: -15px;
+		margin-top: -5px;
 	}
 }
 
