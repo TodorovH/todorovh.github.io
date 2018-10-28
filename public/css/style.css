@@ -189,9 +189,16 @@ ul li:before{
 	}
 
 	#vertical-line {
-		height: 70px;
+		height: 90px;
 	}
 
+	#period-container {
+		margin-top: -15px;
+	}
+
+	#period-container div:first-child {
+		margin-top: 10px;
+	}
 }
 
 @media only screen and (max-width: 1600px) {
