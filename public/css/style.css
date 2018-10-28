@@ -13,7 +13,7 @@ body {
     padding: 0;
     background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
-    background-size: 120% auto;
+    background-size: 150% auto;
     background-color: black;
     font-family: ush;
     color: white;
@@ -181,7 +181,7 @@ ul li:before{
 
 @media only screen and (max-width: 1930px) {
     body {
-        background-size: 120% auto;
+        background-size: 150% auto;
     }
 }
 
