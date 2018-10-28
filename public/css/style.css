@@ -181,12 +181,11 @@ ul li:before{
 
 @media only screen and (max-width: 1930px) {
     body {
-        background-position: 0 0;
         background-size: 120% auto;
     }
 }
 
-@media only screen and (max-width: 1500px) {
+/*@media only screen and (max-width: 1500px) {
     #right-text p {
         font-size: 4.5rem;
     }
@@ -341,4 +340,4 @@ ul li:before{
     #register {
         width:70%;
     }
-}
+}*/
