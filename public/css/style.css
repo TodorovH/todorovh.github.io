@@ -186,6 +186,7 @@ ul li:before{
 
     #central-container {
 		margin: 60px auto;
+		margin-bottom: 0;
 	}
 
 	#vertical-line {
