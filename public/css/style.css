@@ -231,7 +231,7 @@ ul li:before{
 	}
 }
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1400px) {
 	body {
         background-size: 120% auto;
         background-position: 20% 0;
@@ -242,7 +242,7 @@ ul li:before{
 	}
 }
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1300px) {
     body {
         background-size: 130% auto;
         background-position: 30% 0;
@@ -253,7 +253,7 @@ ul li:before{
 	}
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1200px) {
     body {
         background-size: 160% auto;
         background-position: 40% 60%;
