@@ -39,9 +39,10 @@ body {
 }
 
 #central-container {
-	width: 60%;
+	width: 80%;
 	margin: 135px auto;
 	margin-bottom: 50px;
+	text-align: center;
 }
 
 #main-text {
@@ -96,7 +97,7 @@ body {
 
 #vertical-line {
 	height: 142px;
-	border-right: 1px solid #ebbf76;
+	border-right: 1px solid white;
 }
 
 #arrow {
