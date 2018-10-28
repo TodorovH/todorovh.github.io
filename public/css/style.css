@@ -185,7 +185,7 @@ ul li:before{
     }
 
     #central-container {
-		margin: 70px auto;
+		margin: 60px auto;
 	}
 
 	#vertical-line {
@@ -198,6 +198,14 @@ ul li:before{
 
 	#period-container div:first-child {
 		margin-top: 10px;
+	}
+
+	#register {
+	    width: 90%;
+	}
+
+	#register:before{
+		vertical-align: 2px;
 	}
 }
 
