@@ -214,6 +214,7 @@ ul li:before{
 
 	#period-container div:last-child div:first-child {
 		margin-top: -5px;
+		margin-bottom: 10px;
 	}
 }
 
