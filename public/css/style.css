@@ -201,7 +201,7 @@ ul li:before{
 	}
 
 	#register {
-	    width: 90%;
+	    width: 70%;
 	}
 
 	#register:before{
@@ -209,7 +209,7 @@ ul li:before{
 	}
 
 	#period-container div:last-child div:first-child {
-		margin-top: -5px;
+		margin-top: -15px;
 	}
 }
 
