@@ -202,10 +202,11 @@ ul li:before{
 
 	#register {
 	    width: 70%;
+	    margin-top: -10px;
 	}
 
 	#register:before{
-		vertical-align: 2px;
+		vertical-align: 0;
 	}
 
 	#period-container div:last-child {
