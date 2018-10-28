@@ -1,102 +1,180 @@
+@font-face {
+	src: url('../fonts/Uni Sans Heavy.otf');
+	font-family: ush;
+}
+
+@font-face {
+	src: url('../fonts/Uni Sans Thin.otf');
+	font-family: ust;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-image: url('../img/lp2-4_main_background.jpg');
+    background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-color: #46618e;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    color: #fdfa9b;
+    background-color: black;
+    font-family: ush;
+    color: white;
+}
+
+#main-container {
+	width: 100%;
 }
 
 #logo-container {
-    width: 50%;
-    margin-left: 10px;
-    float: left;
+    width: 17%;
+    margin-left: 30px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+#logo-container img {
+	width: 100%;
 }
 
 #logo-container p {
-	font-size: 1.7rem;
-    margin-top: -24px;
-    font-weight: 900;
-    color: #fff;
+	margin: 0;
 }
 
-#right-text {
-    font-weight: 700;
-    float: left;
+#central-container {
+	width: 60%;
+	margin: 135px auto;
+	margin-bottom: 50px;
 }
 
-#right-text p {
-    font-size: 5.5rem;
-    color: white;
-    margin-top: 62px;
-    margin-bottom: 10px;
-    margin-left: 34px;
-    margin-right: 34px;
+#main-text {
+	font-size: 8vw;
+	letter-spacing: 8px;
+	text-shadow: 9px 3px #544225;
 }
 
-#right-text span {
-    font-size: 4.5rem;
-    margin-top: -10px;
-    margin-left: 80px;
+#central-text {
+	width: 100%;
+	display: inline-flex;
+	margin: 0 auto;
 }
 
-#list-container {
-    width: 100%;
-    float: left;
+#period-container {
+	width: 50%;
+	color: #ebbf76;
+	font-size: 8vw;
+	display: inline-flex;
+	margin-right: 20px;
+	margin-top: -20px;
+}
+
+#period-container div:first-child {
+	font-size: 10vw;
+	text-align: right;
+	margin-right: 5px;
+}
+
+#period-container div {
+	width: 50%;
+}
+
+#period-container div:last-child {
+	display: inline-grid;
+	font-family: ust;
+	padding-top: 30px;
+}
+
+#period-container div:last-child div:first-child {
+	font-family: ust;
+	font-size: 3vw;
+	text-align: left;
+}
+
+#period-container div:last-child div:last-child {
+	font-size: 5vw;
+	font-family: ush;
+	padding-top: 0;
+	margin-top: -50px;
+}
+
+#vertical-line {
+	height: 142px;
+	border-right: 1px solid #ebbf76;
+}
+
+#arrow {
+	border-right:2px solid white;
+	border-bottom:2px solid white;
+	width:10px;
+	height:10px;
+	transform: rotate(-45deg);
+	margin-top:40px;
 }
 
 ul {
-    list-style: none;
-    font-size: 2.2rem;
-    font-weight: 800;
-    padding-left: 15px;
-    margin-top: 55px;
+	font-family: ust;
+	font-size: 2vw;
+	margin-top: 0;
 }
 
-li {
-    margin-bottom: 15px;
+ul li {
+	padding-bottom: 11px;
+	list-style:none;
 }
 
-#button-outer-container {
-    width: 100%;
+ul li:before{
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	width: 10px;
+	height: 10px;
+	transform: rotate(-45deg);
+	content: "";
+	display: inline-block;
+	margin-right: 15px;
+	vertical-align: 5px;
 }
 
-#button-inner-container {
-    float: right;
-    width: 30%;
-    text-align: center;
-    margin-top: 100px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
+#button-container {
+	width: 65%;
+	margin: 0 auto;
 }
 
 #register {
-    width: 70%;
-    height: 55px;
+    width: 100%;
+    height: 70px;
+    font-family: ush;
+    color: white;
     cursor: pointer;
-    font-size: 2.5rem;
-    font-weight: 700;
-    border-radius: 5px;
-    outline: none; 
+    font-size: 2vw;
+    border-radius: 35px;
+    background-color: rgba(235,191,118,0.5);
+    outline: none;
+    margin: 0 auto;
+}
+
+#register:before{
+	border-right: 3px solid white;
+	border-bottom: 3px solid white;
+	width: 15px;
+	height: 15px;
+	transform: rotate(-45deg);
+	content: "";
+	display: inline-block;
+	margin-right: 15px;
+	vertical-align: 5px;
 }
 
 #register:hover {
-    background-color: #fdfa9b;
-    color: #46618e;
+    background-color: #ebbf76;
+    opacity: 1;
 }
 
-#button-inner-container p {
-    font-size: 2.1rem;
-    font-weight: 700;
-    margin-top: 15px;
-    margin-bottom: 0;
+#last-text {
+	width: 40%;
+	margin: 10px auto;
+	font-family: ust;
+	font-size: 1.8vw;
+    color: white;
 }
 
-@media only screen and (max-width: 1600px) {
+/*@media only screen and (max-width: 1600px) {
     body {
         background-position: 0 0;
     }
@@ -257,4 +335,4 @@ li {
     #register {
         width:70%;
     }
-}
+}*/
