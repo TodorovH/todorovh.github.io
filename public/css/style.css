@@ -183,6 +183,15 @@ ul li:before{
     body {
         background-size: 150% auto;
     }
+
+    #central-container {
+		margin: 110px auto;
+	}
+
+	#vertical-line {
+		height: 120px;
+	}
+
 }
 
 @media only screen and (max-width: 1600px) {
