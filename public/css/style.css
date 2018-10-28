@@ -40,8 +40,8 @@ body {
 
 #central-container {
 	width: 80%;
-	margin: 135px auto;
-	margin-bottom: 50px;
+	margin: 60px auto;
+	margin-bottom: 0;
 	text-align: center;
 }
 
@@ -63,13 +63,14 @@ body {
 	font-size: 8vw;
 	display: inline-flex;
 	margin-right: 20px;
-	margin-top: -20px;
+	margin-top: -15px;
 }
 
 #period-container div:first-child {
 	font-size: 10vw;
 	text-align: right;
 	margin-right: 5px;
+	margin-top: 10px;
 }
 
 #period-container div {
@@ -86,6 +87,8 @@ body {
 	font-family: ust;
 	font-size: 3vw;
 	text-align: left;
+	margin-top: -5px;
+	margin-bottom: 10px;
 }
 
 #period-container div:last-child div:last-child {
@@ -96,7 +99,7 @@ body {
 }
 
 #vertical-line {
-	height: 142px;
+	height: 90px;
 	border-right: 1px solid white;
 }
 
@@ -163,7 +166,7 @@ ul li:before{
 	content: "";
 	display: inline-block;
 	margin-right: 15px;
-	vertical-align: 5px;
+	vertical-align: 0;
 }
 
 #register:hover {
@@ -177,42 +180,6 @@ ul li:before{
 	font-family: ust;
 	font-size: 1.8vw;
     color: white;
-}
-
-@media only screen and (max-width: 1900px) {
-    body {
-        background-size: 150% auto;
-    }
-
-    #central-container {
-		margin: 60px auto;
-		margin-bottom: 0;
-	}
-
-	#vertical-line {
-		height: 90px;
-	}
-
-	#period-container {
-		margin-top: -15px;
-	}
-
-	#period-container div:first-child {
-		margin-top: 10px;
-	}
-
-	#register:before{
-		vertical-align: 0;
-	}
-
-	#period-container div:last-child {
-		margin-bottom: 0;
-	}
-
-	#period-container div:last-child div:first-child {
-		margin-top: -5px;
-		margin-bottom: 10px;
-	}
 }
 
 @media only screen and (max-width: 1600px) {
