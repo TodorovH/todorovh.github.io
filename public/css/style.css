@@ -52,7 +52,7 @@ body {
 }
 
 #central-text {
-	width: 100%;
+	width: 70%;
 	display: inline-flex;
 	margin: 0 auto;
 }
@@ -98,6 +98,10 @@ body {
 #vertical-line {
 	height: 142px;
 	border-right: 1px solid white;
+}
+
+#list-container {
+	text-align: left;
 }
 
 #arrow {
@@ -175,9 +179,10 @@ ul li:before{
     color: white;
 }
 
-/*@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1930px) {
     body {
         background-position: 0 0;
+        background-size: 120% auto;
     }
 }
 
@@ -336,4 +341,4 @@ ul li:before{
     #register {
         width:70%;
     }
-}*/
+}
