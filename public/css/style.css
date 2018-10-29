@@ -192,7 +192,7 @@ ul li:before{
 	}
 
 	#number {
-		margin-top: 10px;
+		margin-top: 0px;
 		margin-right: 5px;
 	}
 
@@ -228,6 +228,10 @@ ul li:before{
 
     #period-container {
 		margin-right: 40px;
+	}
+
+	#number {
+		margin-top: 10px;
 	}
 
 	#last-text {
