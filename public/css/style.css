@@ -330,9 +330,10 @@ ul li:before{
 	}
 
 	#register {
-		width: 70%;
+		width: 60%;
 		font-family: ush;
 		margin-top: 100px;
+		padding-top: 3px;
 	}
 }
 
