@@ -46,13 +46,13 @@ body {
 }
 
 #main-text {
-	font-size: 8vw;
+	font-size: 115px;
 	letter-spacing: 8px;
 	text-shadow: 9px 3px #544225;
 }
 
 #central-text {
-	width: 70%;
+	width: 77%;
 	display: inline-flex;
 	margin: 0 auto;
 }
@@ -60,14 +60,14 @@ body {
 #period-container {
 	width: 50%;
 	color: #ebbf76;
-	font-size: 8vw;
+	font-size: 115px;
 	display: inline-flex;
 	margin-right: 20px;
 	margin-top: -15px;
 }
 
 #number {
-	font-size: 10vw;
+	font-size: 165px;
 	text-align: right;
 	margin-right: 5px;
 	margin-top: 10px;
@@ -78,24 +78,24 @@ body {
 }
 
 #words {
-	display: inline-grid;
 	font-family: ust;
 	padding-top: 30px;
+	float: left;
 }
 
 #day {
 	font-family: ust;
-	font-size: 3vw;
+	font-size: 55px;
 	text-align: left;
 	margin-top: -5px;
 	margin-bottom: 10px;
 }
 
 #period-container div:last-child div:last-child {
-	font-size: 5vw;
+	font-size: 80px;
 	font-family: ush;
 	padding-top: 0;
-	margin-top: -50px;
+	margin-top: -25px;
 }
 
 #vertical-line {
@@ -118,7 +118,7 @@ body {
 
 ul {
 	font-family: ust;
-	font-size: 2vw;
+	font-size: 33px;
 	margin-top: 0;
 }
 
@@ -140,33 +140,22 @@ ul li:before{
 }
 
 #button-container {
-	width: 65%;
+	width: 100%;
 	margin: 0 auto;
 }
 
 #register {
-    width: 70%;
+    width: 50%;
     height: 70px;
     font-family: ush;
     color: white;
     cursor: pointer;
-    font-size: 2vw;
+    font-size: 33px;
     border-radius: 35px;
+    border: 2px solid white;
     background-color: rgba(235,191,118,0.5);
     outline: none;
     margin: 0 auto;
-}
-
-#register:before{
-	border-right: 3px solid white;
-	border-bottom: 3px solid white;
-	width: 15px;
-	height: 15px;
-	transform: rotate(-45deg);
-	content: "";
-	display: inline-block;
-	margin-right: 15px;
-	vertical-align: 0;
 }
 
 #register:hover {
@@ -178,7 +167,7 @@ ul li:before{
 	width: 40%;
 	margin: 10px auto;
 	font-family: ust;
-	font-size: 1.8vw;
+	font-size: 30px;
     color: white;
 }
 
@@ -206,10 +195,6 @@ ul li:before{
 		margin-right: 5px;
 	}
 
-	#register:before{
-		vertical-align: 5px;
-	}
-
 	#words {
 		padding-top: 30px;
 		margin-right: 0;
@@ -225,43 +210,40 @@ ul li:before{
 	body {
         background-position: 10% 0;
     }
-
-    #vertical-line {
-		height: 120px;
-	}
 }
 
 @media only screen and (max-width: 1400px) {
 	body {
-        background-size: 120% auto;
+        background-size: 120% 100%;
         background-position: 20% 0;
     }
-
-    #vertical-line {
-		height: 110px;
-	}
 }
 
 @media only screen and (max-width: 1300px) {
     body {
-        background-size: 130% auto;
+        background-size: 130% 100%;
         background-position: 30% 0;
     }
 
-    #vertical-line {
-		height: 100px;
+    #period-container {
+		margin-right: 40px;
+	}
+
+	#last-text {
+		font-size: 27px;
 	}
 }
 
 @media only screen and (max-width: 1200px) {
     body {
-        background-size: 160% auto;
-        background-position: 40% 60%;
+        background-size: 160% 100%;
+        background-position: 40% 0;
     }
 
     #logo-container {
 	    width: 50%;
 	    text-align: left;
+	    margin-left: 20px;
 	}
 
 	#logo-container img {
@@ -286,16 +268,21 @@ ul li:before{
 	}
 
 	#period-container {
-		width: 70%;
+		width: 64%;
 		margin-top: 50px;
 	}
 
+	#words {
+		display: contents;
+	}
+
 	#day {
-		margin-top: -10px;
+		margin-top: 85px;
+		font-size: 80px;
 	}
 
 	#period-container div:last-child div:last-child {
-		margin-top: -30px;
+		margin-top: 85px;
 	}
 
 	#vertical-line {
@@ -310,40 +297,89 @@ ul li:before{
 	#list-container {
 		width: 50%;
 		margin: 0 auto;
+		text-align: center;
+	}
+
+	ul {
+		text-align: left;
 	}
 
 	#register {
-	    font-size: 3vw;
 	    margin-top: 70px;
 	}
 
-	#register:before{
-		vertical-align: 0;
+	#last-text {
+		font-size: 22px;
 	}
 }
 
 @media only screen and (max-width: 1100px) {
     body {
-        background-size: 180% auto;
-        background-position: 40% 60%;
+        background-size: 180% 100%;
+        background-position: 40% 0;
     }
 
     #logo-container {
-	    margin-top: 50px;
+	    margin-top: 30px;
 	}
 
     #central-container {
+    	width: 100%;
 		margin: 300px auto;
 		margin-bottom: 50px;
 	}
 
-	#day {
-		margin-top: -20px;
-	}
-
 	#register {
-		width: 90%;
+		width: 70%;
 		font-family: ush;
 		margin-top: 100px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	#main-text {
+		font-size: 75px;
+	}
+
+	#list-container {
+		width: 57%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#list-container {
+		width: 65%;
+	}
+
+	#last-text {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	#number {
+		font-size: 140px;
+	}
+
+	#day {
+		font-size: 50px;
+	}
+
+	#period-container div:last-child div:last-child {
+		font-size: 50px;
+	}
+
+	#list-container {
+		width: 75%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#main-text {
+		font-size: 60px;
+	}
+
+	#list-container {
+		width: 90%;
 	}
 }
