@@ -243,8 +243,8 @@ ul li:before{
 
 @media only screen and (max-width: 1200px) {
     body {
-        background-size: auto 100%;
-        /*background-position: 40% 0;*/
+        /*background-size: 160% 100%;*/
+        background-position: 40% 0;
     }
 
     #logo-container {
