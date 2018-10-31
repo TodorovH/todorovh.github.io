@@ -15,7 +15,7 @@ body {
     background-repeat: no-repeat;
     /*background-size: 100% auto;*/
     background-size: cover;
-    /*background-position: center;*/
+    background-position: center;
     background-color: black;
     font-family: ush;
     color: white;
@@ -23,7 +23,7 @@ body {
 
 #main-container {
     width: 100%;
-    /*height: 100vh;*/
+    height: 100vh;
 }
 
 #logo-container {
