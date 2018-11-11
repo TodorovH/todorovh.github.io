@@ -217,8 +217,19 @@ hr {
     color: white;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1400px) and (orientation : landscape) {
+    #main-container:before {
+        height: 200%;
+    }
+}
 
+@media only screen and (max-width: 1400px) and (orientation : portrait) {
+    #main-container:before {
+        height: 140%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
     #main-text {
         font-size: 50px;
     }
