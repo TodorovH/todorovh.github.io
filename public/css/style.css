@@ -219,7 +219,7 @@ hr {
 
 @media only screen and (max-width: 1400px) and (orientation : landscape) {
     #main-container:before {
-        height: 200%;
+        height: 240%;
     }
 }
 
