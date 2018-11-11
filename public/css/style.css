@@ -10,14 +10,14 @@ body {
     padding: 0;
 }
 
-body:before {
+#main-container:before {
     content: ' ';
     display: block;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    height: 110%;
+    height: 150%;
     z-index: -1;
     opacity: 0.5;
     background-image: url('../img/background.jpg');
@@ -309,14 +309,26 @@ hr {
     #main-text {
         font-size: 35px;
     }
+
+    #lcb-container p {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
+    #main-text {
+        font-size: 30px;
+    }
 
+    #lcb-container p {
+        font-size: 10px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
-
+    #lcb-container p {
+        font-size: 8px;
+    }
 }
 
 @media only screen and (max-width: 700px) {
