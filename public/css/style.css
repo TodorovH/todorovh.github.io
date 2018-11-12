@@ -21,7 +21,7 @@ body:before {
     z-index: -1;
     opacity: 0.5;
     background-image: url('../img/background.jpg');
-    background-repeat: repeat;
+    background-repeat: repeat-y;
     background-position: cover;
     background-attachment: fixed;
 }
