@@ -22,6 +22,7 @@ body:before {
     opacity: 0.5;
     background-image: url('../img/background.jpg');
     background-repeat: repeat-y;
+    background-position: cover;
     background-attachment: fixed;
 }
 
