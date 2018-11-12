@@ -218,7 +218,7 @@ hr {
 
 @media only screen and (max-width: 1400px) and (orientation : portrait) {
     body:before {
-        height: 140%;
+        height: 100%;
     }
 
     #terms-policy-container {
