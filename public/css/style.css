@@ -213,7 +213,7 @@ hr {
 
 @media only screen and (max-width: 1400px) and (orientation : landscape) {
     body:before {
-        height: 200%;
+        height: 180%;
     }
 }
 
