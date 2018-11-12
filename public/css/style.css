@@ -217,6 +217,12 @@ hr {
     }
 }
 
+@media only screen and (max-width: 1200px) and (orientation : landscape) {
+    body:before {
+        height: 100%;
+    }
+}
+
 @media only screen and (max-width: 1400px) and (orientation : portrait) {
     body:before {
         height: 100%;
