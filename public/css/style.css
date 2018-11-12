@@ -22,7 +22,6 @@ body:before {
     opacity: 0.5;
     background-image: url('../img/background.jpg');
     background-repeat: repeat-y;
-    background-position: cover;
     background-attachment: fixed;
 }
 
@@ -53,14 +52,7 @@ body:before {
 
 #maxta, #community {
     vertical-align: -20px;
-}
-
-#maxta {
     font-size: 30px;
-}
-
-#community {
-    font-size: 25px;
 }
 
 #main-text {
@@ -220,13 +212,17 @@ hr {
 
 @media only screen and (max-width: 1400px) and (orientation : landscape) {
     body:before {
-        height: 240%;
+        height: 180%;
     }
 }
 
 @media only screen and (max-width: 1400px) and (orientation : portrait) {
     body:before {
         height: 140%;
+    }
+
+    #terms-policy-container {
+        width: 60%;
     }
 }
 
@@ -258,6 +254,11 @@ hr {
 
     #line {
         margin-top: -102px;
+        margin-bottom: 100px;
+    }
+
+    #terms-policy-container {
+        width: 70%;
     }
 }
 
@@ -285,6 +286,10 @@ hr {
     .empty-space {
         width: 8%;
     }
+
+    #terms-policy-container {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -292,23 +297,40 @@ hr {
         font-size: 40px;
     }
 
-    #line {
-        display: none;
-    }
-
-    #steps-container {
-        display: block;
-    }
-
     #step1,
     #step2,
     #step3 {
         width: 245px;
         margin: 0 auto;
+        font-size: 20px;
     }
 
-    hr {
-        width: 70%;
+    #step1 {
+        padding-top: 24px;
+        height: 46px;
+    }
+
+    #step2 {
+        padding-top: 10px;
+        height: 58px;
+    }
+
+    #step3 {
+        padding-top: 10px;
+        height: 58px;
+    }
+
+    .empty-space {
+        width: 6%;
+    }
+
+    #line {
+        margin-top: -100px;
+        margin-bottom: 95px;
+    }
+
+    #terms-policy-container {
+        font-size: 12px;
     }
 }
 
@@ -324,6 +346,40 @@ hr {
     #lcb-container p {
         font-size: 12px;
     }
+
+    #step1,
+    #step2,
+    #step3 {
+        font-size: 18px;
+    }
+
+    #step1 {
+        padding-top: 22px;
+        height: 42px;
+    }
+
+    #step2 {
+        padding-top: 10px;
+        height: 54px;
+    }
+
+    #step3 {
+        padding-top: 10px;
+        height: 54px;
+    }
+
+    .empty-space {
+        width: 4%;
+    }
+
+    #line {
+        margin-top: -98px;
+        margin-bottom: 90px;
+    }
+
+    #terms-policy-container {
+        font-size: 10px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -334,11 +390,59 @@ hr {
     #lcb-container p {
         font-size: 10px;
     }
+
+    #steps-container {
+        width: 90%;
+    }
+
+    #step1 {
+        padding-top: 20px;
+        height: 38px;
+    }
+
+    #step2 {
+        padding-top: 10px;
+        height: 48px;
+    }
+
+    #step3 {
+        padding-top: 10px;
+        height: 48px;
+    }
+
+    .empty-space {
+        width: 2%;
+    }
+
+    #line {
+        margin-top: -94px;
+        margin-bottom: 80px;
+    }
+
+    hr {
+        width: 90%;
+    }
+
+    #terms-policy-container {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 800px) {
     #lcb-container p {
         font-size: 8px;
+    }
+
+    #steps-container {
+        width: 100%;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    #terms-policy-container {
+        width: 100%;
     }
 }
 
