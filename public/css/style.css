@@ -13,22 +13,6 @@ body {
     padding: 0;
 }
 
-/*body:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 175%;
-    z-index: -1;
-    opacity: 0.5;
-    background-image: url('../img/background.jpg');
-    background-repeat: repeat;
-    background-position: cover;
-    background-attachment: fixed;
-}*/
-
 #upper-container {
     width: 93%;
     margin: 50px auto;
@@ -37,10 +21,11 @@ body {
 }
 
 #logo-container {
-    width: 300px;
+    width: 320px;
     height: 52px;
     background-color: white;
     margin-left: 5px;
+    padding-right: 5px;
     margin-top: -30px;
     text-align: center;
     color: #0b2839;
@@ -48,6 +33,15 @@ body {
     letter-spacing: -1px;
     -webkit-transform: scaleX(0.8);
     transform: scaleX(0.8);
+    opacity: .4;
+}
+
+#hidden-line {
+    width: 259px;
+    height: 9px;
+    background-color: white;
+    margin-left: 38px;
+    margin-top: -9px;
 }
 
 #logo-container .green {
@@ -130,7 +124,7 @@ button:hover {
 
 #lower-container-back {
     width: 100%;
-    background-color: #f5f2f2;
+    background-color: #020f61;
     padding-top: 10px;
     padding-bottom: 15px;
     margin-top: -5px;
@@ -139,7 +133,7 @@ button:hover {
 #lower-container {
     width: 90%;
     padding: 30px;
-    margin: 30px auto;
+    margin: 0 auto;
     background-color: #020f61;
 }
 
@@ -214,27 +208,13 @@ hr {
     color: white;
 }
 
-@media only screen and (max-width: 1400px) and (orientation : landscape) {
-    body:before {
-        /*height: 100%;*/
-    }
-}
-
-@media only screen and (max-width: 1200px) and (orientation : landscape) {
-    body:before {
-        /*height: 175%;*/
-    }
-}
-
-@media only screen and (max-width: 1400px) and (orientation : portrait) {
-    body:before {
-        /*height: 100%;*/
-    }
-}
-
 @media only screen and (max-width: 1400px) {
     #main-text {
         font-size: 50px;
+    }
+
+    #steps-container {
+        margin-top: 10px;
     }
 
     #step1,
@@ -450,16 +430,136 @@ hr {
     #terms-policy-container {
         width: 100%;
     }
+
+    input[type=text] {
+        width: 55%;
+        font-size: 20px;
+    }
+
+    button {
+        width: 250px;
+        font-size: 32px;
+    }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 650px) {
+    #step1 {
+        padding-top: 14px;
+        height: 35px;
+    }
 
+    #step2 {
+        padding-top: 4px;
+        height: 43px;
+    }
+
+    #step3 {
+        padding-top: 4px;
+        height: 43px;
+    }
+
+    #line {
+        margin-top: -90px;
+        margin-bottom: 70px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
+    input[type=text] {
+        width: 60%;
+    }
 
+    button {
+        width: 220px;
+        font-size: 28px;
+    }
+
+    #steps-container {
+        margin-top: 5px;
+    }
+
+    #step1,
+    #step2,
+    #step3 {
+        font-size: 14px;
+    }
+
+    #step1 {
+        padding-top: 12px;
+        height: 28px;
+    }
+
+    #step2 {
+        padding-top: 5px;
+        height: 37px;
+    }
+
+    #step3 {
+        padding-top: 5px;
+        height: 37px;
+    }
+
+    #line {
+        margin-top: -86px;
+        margin-bottom: 60px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
+    #steps-container {
+        margin-top: 0;
+    }
 
+    #step1,
+    #step2,
+    #step3 {
+        font-size: 12px;
+    }
+
+    #step1 {
+        padding-top: 10px;
+        height: 24px;
+    }
+
+    #step2 {
+        padding-top: 3px;
+        height: 31px;
+    }
+
+    #step3 {
+        padding-top: 3px;
+        height: 31px;
+    }
+
+    #line {
+        margin-top: -82px;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #step1,
+    #step2,
+    #step3 {
+        font-size: 10px;
+    }
+
+    #step1 {
+        padding-top: 6px;
+        height: 20px;
+    }
+
+    #step2 {
+        padding-top: 3px;
+        height: 24px;
+    }
+
+    #step3 {
+        padding-top: 3px;
+        height: 24px;
+    }
+
+    #line {
+        margin-top: -78px;
+    }
 }
