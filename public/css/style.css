@@ -1,6 +1,6 @@
 @font-face {
     src: url('../fonts/HARNGTON.TTF');
-    font-family: har;
+    font-family: harn;
 }
 
 body {
@@ -41,7 +41,7 @@ body {
     margin: 135px auto;
     margin-bottom: 75px;
     font-size: 30px;
-    font-family: har;
+    font-family: harn;
     text-align: center;
     color: white;
     font-weight: bold;
@@ -55,7 +55,7 @@ body {
 #text-container {
     text-align: center;
     color: white;
-    font-family: Harrington;
+    font-family: harn;
     font-weight: bold;
     margin-bottom: 0;
 }
