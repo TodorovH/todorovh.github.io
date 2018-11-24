@@ -55,19 +55,20 @@ body {
 #text-container {
     text-align: center;
     color: white;
-    font-family: harn;
     font-weight: bold;
     margin-bottom: 0;
 }
 
 #first-paragraph {
     font-size: 40px;
+    font-family: harn;
     margin: 0;
     padding: 0;
 }
 
 #second-paragraph {
     font-size: 21px;
+    font-family: harn;
     margin: 0;
     margin-top: 10px;
     padding: 0;
