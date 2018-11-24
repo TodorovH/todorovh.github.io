@@ -1,0 +1,364 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma,Verdana,Segoe,sans-serif;
+    color: #ad8a49;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center-x;
+    background-color: #380601;
+}
+
+#main-container {
+    margin: 0;
+    padding: 0;
+}
+
+#upper-container {
+    width: 93%;
+    height: 520px;
+    margin: 50px auto;
+}
+
+#logo-container {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+}
+
+#logo-container img {
+    width: 165px;
+}
+
+#main-text {
+    width: 90%;
+    margin: 135px auto;
+    margin-bottom: 75px;
+    font-size: 30px;
+    font-family: Harrington;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+#central-container {
+    margin: 0;
+    padding: 0;
+}
+
+#text-container {
+    text-align: center;
+    color: white;
+    font-family: Harrington;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#first-paragraph {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+#second-paragraph {
+    font-size: 21px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+#lcb-container {
+    padding-top: 30px;
+    text-align: center;
+}
+
+input[type=text] {
+    width: 415px;
+    height: 35px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+button {
+    width: 430px;
+    height: 30px;
+    font-size: 22px;
+    font-weight: bolder;
+    outline: none;
+    background-color: #ddb744;
+    border-radius: 6px;
+    border-color: white;
+    color: white;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-bottom: 6px;
+    -webkit-transform: scaleY(1.2);
+    transform: scaleY(1.5);
+}
+
+button:hover {
+    background-color: #fcaa00;
+    color: #380601;
+}
+
+#lcb-container p,
+#lcb-container a {
+    color: white;
+}
+
+#lower-container {
+    width: 90%;
+    padding: 30px;
+    margin: 0 auto;
+    color: #e6b133;
+}
+
+#terms-policy-container {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: justify;
+}
+
+#terms-policy-container a {
+    color: #e6b133;
+}
+
+@media only screen and (max-width: 1650px) {
+    #upper-container {
+        height: 670px;
+    }
+
+    #logo-container {
+        top: 18px;
+        right: 17px;
+    }
+
+    #logo-container img {
+        width: 220px;
+    }
+
+    #main-text {
+        margin: 168px auto;
+        margin-bottom: 100px;
+        font-size: 40px;
+    }
+
+    #text-container {
+        margin-bottom: 20px;
+    }
+
+    #first-paragraph {
+        font-size: 50px;
+    }
+
+    #second-paragraph {
+        font-size: 27px;
+        margin-top: 15px;
+    }
+
+    input[type=text] {
+        width: 500px;
+        height: 40px;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    button {
+        width: 490px;
+        height: 36px;
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+}
+
+@media only screen and (max-width: 1550px) {
+    #upper-container {
+        height: 630px;
+    }
+
+    #logo-container {
+        top: 16px;
+        right: 15px;
+    }
+
+    #logo-container img {
+        width: 210px;
+    }
+
+    #main-text {
+        margin: 165px auto;
+        margin-bottom: 90px;
+        font-size: 35px;
+    }
+
+    #text-container {
+        margin-bottom: 20px;
+    }
+
+    #first-paragraph {
+        font-size: 45px;
+    }
+
+    #second-paragraph {
+        font-size: 22px;
+        margin-top: 12px;
+    }
+
+    input[type=text] {
+        width: 450px;
+        height: 36px;
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+
+    button {
+        width: 430px;
+        height: 33px;
+        font-size: 22px;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    #upper-container {
+        height: 600px;
+    }
+
+    #main-text {
+        margin: 152px auto;
+        margin-bottom: 80px;
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    #upper-container {
+        height: 540px;
+    }
+
+    #logo-container img {
+        width: 190px;
+    }
+
+    #main-text {
+        margin: 140px auto;
+        margin-bottom: 75px;
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    body {
+        background-size: 1400px auto;
+        background-position: center 0;
+    }
+
+    #upper-container {
+        height: 580px;
+    }
+
+    #main-text {
+        margin: 155px auto;
+        margin-bottom: 85px;
+    }
+
+    #logo-container img {
+        width: 170px;
+    }
+
+    #first-paragraph {
+        font-size: 55px;
+    }
+
+    #second-paragraph {
+        font-size: 29px;
+    }
+}
+
+@media only screen and (max-width: 1250px ) and (orientation: portrait) {
+    body {
+        background-size: 1900px auto;
+        background-position: center 0;
+    }
+
+    #upper-container {
+        height: 800px;
+    }
+
+    #main-text {
+        margin: 205px auto;
+        font-size: 47px;
+        margin-bottom: 120px;
+    }
+
+    #logo-container img {
+        width: 170px;
+    }
+
+    input[type=text] {
+        height: 45px;
+        margin-bottom: 35px;
+    }
+
+    button {
+        height: 35px;
+        margin-top: 7px;
+    }
+
+    #terms-policy-container {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #logo-container img {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #logo-container img {
+        width: 120px;
+    }
+
+    input[type=text] {
+        width: 76%;
+    }
+
+    button {
+        width: 76%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #logo-container img {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #first-paragraph {
+        font-size: 35px;
+    }
+
+    #second-paragraph {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    button {
+        font-size: 18px;
+    }
+}
