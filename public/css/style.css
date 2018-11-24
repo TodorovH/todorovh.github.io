@@ -2,10 +2,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: Tahoma,Verdana,Segoe,sans-serif;
-    color: white;
+    color: #ad8a49;
     background-image: url('../img/background.jpg');
-    background-repeat: repeat;
-    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center-x;
+    background-color: #380601;
 }
 
 #main-container {
@@ -15,90 +17,67 @@ body {
 
 #upper-container {
     width: 93%;
+    height: 520px;
     margin: 50px auto;
-    border: solid 7px #5398c8;
-    opacity: 1;
 }
 
 #logo-container {
-    width: 320px;
-    height: 52px;
-    background-color: white;
-    margin-left: 5px;
-    padding-right: 5px;
-    margin-top: -30px;
-    text-align: center;
-    color: #0b2839;
-    font-weight: bold;
-    letter-spacing: -1px;
-    -webkit-transform: scaleX(0.8);
-    transform: scaleX(0.8);
-    opacity: .4;
+    position: absolute;
+    top: 16px;
+    right: 15px;
 }
 
-#hidden-line {
-    width: 259px;
-    height: 9px;
-    background-color: white;
-    margin-left: 38px;
-    margin-top: -9px;
-}
-
-#logo-container .green {
-    color: #01fe48;
-}
-
-#maxta, #community {
-    vertical-align: -20px;
-    font-size: 30px;
+#logo-container img {
+    width: 165px;
 }
 
 #main-text {
     width: 90%;
-    margin: 30px auto;
-    margin-bottom: 0;
-    font-size: 60px;
-    letter-spacing: 5px;
+    margin: 135px auto;
+    margin-bottom: 75px;
+    font-size: 30px;
+    font-family: Harrington;
     text-align: center;
-    text-shadow: 6px 2px #cbcac7;
-    color: #636467;
+    color: white;
     font-weight: bold;
-    -webkit-transform: scaleY(1.2);
-    transform: scaleY(1.2);
-    line-height: 0.95;
-}
-
-#bonus {
-    text-shadow: 6px 2px #cdf6b1;
-    color: #69c50f;
 }
 
 #central-container {
     margin: 0;
     padding: 0;
-    display: inline-flex;
 }
 
-#image-container {
-    width: 61%;
+#text-container {
     text-align: center;
+    color: white;
+    font-family: Harrington;
+    font-weight: bold;
+    margin-bottom: 0;
 }
 
-#image-container img {
-    width: 93%;
+#first-paragraph {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+#second-paragraph {
+    font-size: 21px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
 }
 
 #lcb-container {
-    color: black;
-    padding-top: 220px;
+    padding-top: 30px;
+    text-align: center;
 }
 
 input[type=text] {
-    width: 400px;
-    height: 40px;
-    margin-bottom: 35px;
-    font-size: 22px;
-    font-style: italic;
+    width: 415px;
+    height: 35px;
+    margin-bottom: 20px;
+    font-size: 15px;
     font-weight: bold;
     outline: none;
     padding-left: 15px;
@@ -106,98 +85,42 @@ input[type=text] {
 }
 
 button {
-    width: 300px;
-    height: 50px;
-    font-size: 34px;
+    width: 430px;
+    height: 30px;
+    font-size: 22px;
     font-weight: bolder;
     outline: none;
-    background-color: #e8ba5a;
-    color: #636467;
+    background-color: #ddb744;
+    border-radius: 6px;
+    border-color: white;
+    color: white;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-top: 7px;
+    margin-bottom: 6px;
+    -webkit-transform: scaleY(1.2);
+    transform: scaleY(1.5);
 }
 
 button:hover {
     background-color: #fcaa00;
-    color: black;
+    color: #380601;
 }
 
-#lower-container-back {
-    width: 100%;
-    background-color: #020f61;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    margin-top: -5px;
+#lcb-container p,
+#lcb-container a {
+    color: white;
 }
 
 #lower-container {
     width: 90%;
     padding: 30px;
     margin: 0 auto;
-    background-color: #020f61;
-}
-
-#steps-container {
-    width: 80%;
-    display: flex;
-    margin: 25px auto;
-    margin-bottom: 50px;
-}
-
-#step1,
-#step2,
-#step3 {
-    width: 24%;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: white;
-    border: 9px solid #5398c9;
-    color: #020f61;
-    border-radius: 140px / 50px;
-    margin-left: 8px;
-}
-
-#step1 {
-    padding-top: 20px;
-    height: 62px;
-}
-
-#step2 {
-    padding-top: 9px;
-    height: 73px;
-}
-
-#step3 {
-    padding-top: 9px;
-    height: 73px;
-}
-
-.empty-space {
-    width: 10%;
-}
-
-#line {
-    width: 60%;
-    height: 10px;
-    margin: 0 auto;
-    z-index: -1;
-    background: white;
-    margin-top: -105px;
-    margin-bottom: 105px;
-}
-
-hr {
-    width: 80%;
-    height: 3px;
-    border: none;
-    background-color: white;
+    color: #e6b133;
 }
 
 #terms-policy-container {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
-    margin-top: 50px;
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
@@ -205,361 +128,193 @@ hr {
 }
 
 #terms-policy-container a {
-    color: white;
+    color: #e6b133;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1650px) {
+    #upper-container {
+        height: 670px;
+    }
+
+    #logo-container {
+        top: 18px;
+        right: 17px;
+    }
+
+    #logo-container img {
+        width: 220px;
+    }
+
     #main-text {
-        font-size: 50px;
-    }
-
-    #steps-container {
-        margin-top: 10px;
-    }
-
-    #step1,
-    #step2,
-    #step3 {
-        font-size: 24px;
-    }
-
-    #step1 {
-        padding-top: 24px;
-        height: 50px;
-    }
-
-    #step2 {
-        padding-top: 10px;
-        height: 63px;
-    }
-
-    #step3 {
-        padding-top: 10px;
-        height: 63px;
-    }
-
-    #line {
-        margin-top: -102px;
+        margin: 168px auto;
         margin-bottom: 100px;
-    }
-
-    #terms-policy-container {
-        width: 70%;
-    }
-}
-
-@media only screen and (max-width: 1300px) {
-    #central-container {
-        display: block;
-    }
-
-    #image-container {
-        margin: 10px auto;
-    }
-
-    #lcb-container {
-        padding-top: 0;
-    }
-
-    form {
-        text-align: center;
-    }
-
-    #lcb-container p {
-        text-align: center;
-    }
-
-    .empty-space {
-        width: 8%;
-    }
-
-    #terms-policy-container {
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    #main-text {
         font-size: 40px;
     }
 
-    #step1,
-    #step2,
-    #step3 {
-        width: 245px;
-        margin: 0 auto;
-        font-size: 20px;
+    #text-container {
+        margin-bottom: 20px;
     }
 
-    #step1 {
-        padding-top: 24px;
-        height: 46px;
+    #first-paragraph {
+        font-size: 50px;
     }
 
-    #step2 {
-        padding-top: 10px;
-        height: 58px;
-    }
-
-    #step3 {
-        padding-top: 10px;
-        height: 58px;
-    }
-
-    .empty-space {
-        width: 6%;
-    }
-
-    #line {
-        margin-top: -100px;
-        margin-bottom: 95px;
-    }
-
-    #terms-policy-container {
-        font-size: 12px;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    #image-container {
-        width: 90%;
-    }
-
-    #main-text {
-        font-size: 35px;
-    }
-
-    #lcb-container p {
-        font-size: 12px;
-    }
-
-    #step1,
-    #step2,
-    #step3 {
-        font-size: 18px;
-    }
-
-    #step1 {
-        padding-top: 22px;
-        height: 42px;
-    }
-
-    #step2 {
-        padding-top: 10px;
-        height: 54px;
-    }
-
-    #step3 {
-        padding-top: 10px;
-        height: 54px;
-    }
-
-    .empty-space {
-        width: 4%;
-    }
-
-    #line {
-        margin-top: -98px;
-        margin-bottom: 90px;
-    }
-
-    #terms-policy-container {
-        font-size: 10px;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    #main-text {
-        font-size: 30px;
-    }
-
-    #lcb-container p {
-        font-size: 10px;
-    }
-
-    #steps-container {
-        width: 90%;
-    }
-
-    #step1 {
-        padding-top: 20px;
-        height: 38px;
-    }
-
-    #step2 {
-        padding-top: 10px;
-        height: 48px;
-    }
-
-    #step3 {
-        padding-top: 10px;
-        height: 48px;
-    }
-
-    .empty-space {
-        width: 2%;
-    }
-
-    #line {
-        margin-top: -94px;
-        margin-bottom: 80px;
-    }
-
-    hr {
-        width: 90%;
-    }
-
-    #terms-policy-container {
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    #lcb-container p {
-        font-size: 8px;
-    }
-
-    #steps-container {
-        width: 100%;
-    }
-
-    hr {
-        width: 100%;
-    }
-
-    #terms-policy-container {
-        width: 100%;
+    #second-paragraph {
+        font-size: 27px;
+        margin-top: 15px;
     }
 
     input[type=text] {
-        width: 55%;
-        font-size: 20px;
+        width: 500px;
+        height: 40px;
+        margin-bottom: 30px;
+        font-size: 18px;
     }
 
     button {
-        width: 250px;
+        width: 490px;
+        height: 36px;
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+}
+
+@media only screen and (max-width: 1550px) {
+    #upper-container {
+        height: 630px;
+    }
+
+    #logo-container {
+        top: 16px;
+        right: 15px;
+    }
+
+    #logo-container img {
+        width: 210px;
+    }
+
+    #main-text {
+        margin: 165px auto;
+        margin-bottom: 90px;
+        font-size: 35px;
+    }
+
+    #text-container {
+        margin-bottom: 20px;
+    }
+
+    #first-paragraph {
+        font-size: 45px;
+    }
+
+    #second-paragraph {
+        font-size: 22px;
+        margin-top: 12px;
+    }
+
+    input[type=text] {
+        width: 450px;
+        height: 36px;
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+
+    button {
+        width: 430px;
+        height: 33px;
+        font-size: 22px;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    #upper-container {
+        height: 600px;
+    }
+
+    #main-text {
+        margin: 152px auto;
+        margin-bottom: 80px;
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    #upper-container {
+        height: 540px;
+    }
+
+    #logo-container img {
+        width: 190px;
+    }
+
+    #main-text {
+        margin: 140px auto;
+        margin-bottom: 75px;
         font-size: 32px;
     }
 }
 
-@media only screen and (max-width: 650px) {
-    #step1 {
-        padding-top: 14px;
-        height: 35px;
+@media only screen and (max-width: 1250px) {
+    body {
+        background-size: 1400px auto;
+        background-position: center 0;
     }
 
-    #step2 {
-        padding-top: 4px;
-        height: 43px;
+    #upper-container {
+        height: 580px;
     }
 
-    #step3 {
-        padding-top: 4px;
-        height: 43px;
+    #main-text {
+        margin: 155px auto;
+        margin-bottom: 85px;
     }
 
-    #line {
-        margin-top: -90px;
-        margin-bottom: 70px;
+    #logo-container img {
+        width: 170px;
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
+    #logo-container img {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #logo-container img {
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #logo-container img {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
     input[type=text] {
-        width: 60%;
+        width: 76%;
     }
 
     button {
-        width: 220px;
-        font-size: 28px;
+        width: 76%;
     }
 
-    #steps-container {
-        margin-top: 5px;
+    #first-paragraph {
+        font-size: 35px;
     }
 
-    #step1,
-    #step2,
-    #step3 {
-        font-size: 14px;
-    }
-
-    #step1 {
-        padding-top: 12px;
-        height: 28px;
-    }
-
-    #step2 {
-        padding-top: 5px;
-        height: 37px;
-    }
-
-    #step3 {
-        padding-top: 5px;
-        height: 37px;
-    }
-
-    #line {
-        margin-top: -86px;
-        margin-bottom: 60px;
+    #second-paragraph {
+        font-size: 18px;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    #steps-container {
-        margin-top: 0;
-    }
-
-    #step1,
-    #step2,
-    #step3 {
-        font-size: 12px;
-    }
-
-    #step1 {
-        padding-top: 10px;
-        height: 24px;
-    }
-
-    #step2 {
-        padding-top: 3px;
-        height: 31px;
-    }
-
-    #step3 {
-        padding-top: 3px;
-        height: 31px;
-    }
-
-    #line {
-        margin-top: -82px;
-        margin-bottom: 50px;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    #step1,
-    #step2,
-    #step3 {
-        font-size: 10px;
-    }
-
-    #step1 {
-        padding-top: 6px;
-        height: 20px;
-    }
-
-    #step2 {
-        padding-top: 3px;
-        height: 24px;
-    }
-
-    #step3 {
-        padding-top: 3px;
-        height: 24px;
-    }
-
-    #line {
-        margin-top: -78px;
+    button {
+        font-size: 18px;
     }
 }
