@@ -43,7 +43,7 @@ body {
     font-size: 30px;
     font-family: harn;
     text-align: center;
-    color: white;
+    color: #e6b133;
     font-weight: bold;
 }
 
@@ -62,6 +62,7 @@ body {
 #first-paragraph {
     font-size: 40px;
     font-family: harn;
+    color: #e6b133;
     margin: 0;
     padding: 0;
 }
@@ -91,7 +92,7 @@ input[type=text] {
 }
 
 button {
-    width: 430px;
+    width: 340px;
     height: 30px;
     font-size: 22px;
     font-weight: bolder;
@@ -115,6 +116,16 @@ button:hover {
 #lcb-container p,
 #lcb-container a {
     color: white;
+}
+
+#last-text {
+    font-size: 35px;
+    font-family: Ink Free;
+    text-align: center;
+    color: #e6b133;
+    margin: 0;
+    padding: 0;
+    margin-top: 22px;
 }
 
 #lower-container {
@@ -178,11 +189,22 @@ button:hover {
     }
 
     button {
-        width: 490px;
+        width: 375px;
         height: 36px;
         font-size: 24px;
         margin-top: 0;
         margin-bottom: 12px;
+    }
+
+    #last-text {
+        margin-top: 84px;
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    #last-text {
+        margin-top: 77px;
     }
 }
 
@@ -227,11 +249,21 @@ button:hover {
     }
 
     button {
-        width: 430px;
+        width: 340px;
         height: 33px;
         font-size: 22px;
         margin-top: 0;
         margin-bottom: 12px;
+    }
+
+    #last-text {
+        margin-top: 105px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    #last-text {
+        margin-top: 83px;
     }
 }
 
@@ -244,6 +276,16 @@ button:hover {
         margin: 152px auto;
         margin-bottom: 80px;
         font-size: 35px;
+    }
+
+    #last-text {
+        margin-top: 76px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #last-text {
+        margin-top: 52px;
     }
 }
 
@@ -260,6 +302,16 @@ button:hover {
         margin: 140px auto;
         margin-bottom: 75px;
         font-size: 32px;
+    }
+
+    #last-text {
+        margin-top: 45px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #last-text {
+        margin-top: 20px;
     }
 }
 
@@ -288,6 +340,10 @@ button:hover {
 
     #second-paragraph {
         font-size: 29px;
+    }
+
+    #last-text {
+        margin-top: 42px;
     }
 }
 
@@ -325,6 +381,10 @@ button:hover {
         font-size: 10px;
         line-height: 14px;
     }
+
+    #last-text {
+        margin-top: 42px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -343,7 +403,7 @@ button:hover {
     }
 
     button {
-        width: 76%;
+        width: 58%;
     }
 }
 
@@ -361,9 +421,13 @@ button:hover {
     #second-paragraph {
         font-size: 18px;
     }
+
+    #last-text {
+        margin-top: 80px;
+    }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     button {
         font-size: 18px;
     }
