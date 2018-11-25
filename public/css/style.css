@@ -3,6 +3,11 @@
     font-family: harn;
 }
 
+@font-face {
+    src: url('../fonts/COMIC.TTF');
+    font-family: comic;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -120,7 +125,7 @@ button:hover {
 
 #last-text {
     font-size: 35px;
-    font-family: Comic Sans MS;
+    font-family: comic;
     text-align: center;
     color: #e6b133;
     margin: 0;
@@ -383,7 +388,7 @@ button:hover {
     }
 
     #last-text {
-        margin-top: 96px;
+        margin-top: 120px;
     }
 }
 
