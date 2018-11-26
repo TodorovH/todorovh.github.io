@@ -454,10 +454,15 @@ button:hover {
     #upper-container {
         width: 100%;
         margin: 0 auto;
+        height: 830px;
     }
 
     #main-text {
         font-size: 42px;
+    }
+
+    #first-paragraph {
+        font-size: 28px;
     }
 
     #last-text {
