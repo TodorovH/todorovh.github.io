@@ -449,3 +449,18 @@ button:hover {
         font-size: 14px;
     }
 }
+
+@media only screen and (max-width: 400px) {
+    #upper-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #main-text {
+        font-size: 42px;
+    }
+
+    #last-text {
+        margin-top: 185px;
+    }
+}
