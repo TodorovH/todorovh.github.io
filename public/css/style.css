@@ -1,11 +1,6 @@
 @font-face {
-    src: url('../fonts/HARNGTON.TTF');
-    font-family: harn;
-}
-
-@font-face {
-    src: url('../fonts/comici.ttf');
-    font-family: comic;
+    src: url('../fonts/Viner Hand ITC.ttf');
+    font-family: vhi;
 }
 
 body {
@@ -17,76 +12,61 @@ body {
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center-x;
-    background-color: #380601;
+    background-color: #221a03;
 }
 
 #main-container {
     margin: 0;
     padding: 0;
+    display: block;
 }
 
 #upper-container {
-    width: 93%;
-    height: 520px;
-    margin: 50px auto;
+    width: 30%;
+    height: 300px;
+    margin: 80px 215px;
 }
 
 #logo-container {
     position: absolute;
-    top: 16px;
-    right: 15px;
-}
-
-#logo-container img {
-    width: 165px;
+    top: 20px;
+    left: 20px;
+    font-size: 25px;
+    font-family: vhi;
+    color: #fcc506;
 }
 
 #main-text {
-    width: 90%;
+    width: 100%;
     margin: 135px auto;
-    margin-bottom: 75px;
-    font-size: 30px;
-    font-family: harn;
+    margin-bottom: 30px;
+    font-size: 50px;
     text-align: center;
-    color: #e6b133;
+    color: #fcc506;
     font-weight: bold;
 }
 
 #central-container {
     margin: 0;
     padding: 0;
+    background-color: rgba(0,0,0,.5);
+    padding: 20px;
 }
 
-#text-container {
+#registration-container {
     text-align: center;
     color: white;
-    font-weight: bold;
     margin-bottom: 0;
-}
-
-#first-paragraph {
-    font-size: 40px;
-    font-family: harn;
-    color: #e6b133;
-    margin: 0;
-    padding: 0;
-}
-
-#second-paragraph {
-    font-size: 21px;
-    font-family: harn;
-    margin: 0;
-    margin-top: 10px;
-    padding: 0;
+    font-size: 23px;
 }
 
 #lcb-container {
-    padding-top: 30px;
+    padding-top: 15px;
     text-align: center;
 }
 
 input[type=text] {
-    width: 415px;
+    width: 280px;
     height: 35px;
     margin-bottom: 20px;
     font-size: 15px;
@@ -97,20 +77,14 @@ input[type=text] {
 }
 
 button {
-    width: 340px;
-    height: 30px;
+    width: 250px;
+    height: 40px;
     font-size: 22px;
     font-weight: bolder;
     outline: none;
-    background-color: #ddb744;
-    border-radius: 6px;
-    border-color: white;
+    background-color: #388f13;
     color: white;
     cursor: pointer;
-    margin-top: 7px;
-    margin-bottom: 6px;
-    -webkit-transform: scaleY(1.2);
-    transform: scaleY(1.5);
 }
 
 button:hover {
@@ -121,16 +95,8 @@ button:hover {
 #lcb-container p,
 #lcb-container a {
     color: white;
-}
-
-#last-text {
-    font-size: 35px;
-    font-family: comic;
-    text-align: center;
-    color: #e6b133;
-    margin: 0;
-    padding: 0;
-    margin-top: 22px;
+    font-size: 15px;
+    margin-bottom: 0;
 }
 
 #lower-container {
@@ -138,6 +104,27 @@ button:hover {
     padding: 30px;
     margin: 0 auto;
     color: #e6b133;
+}
+
+#steps-container {
+    display: flex;
+    width: 80%;
+    height: 320px;
+    margin: 0 auto;
+}
+
+#step1,
+#step2,
+#step3 {
+    width: 33%;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    font-size: 22px;
+    font-weight: bold;
+    background-image: url('../img/circle.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 #terms-policy-container {
@@ -155,317 +142,298 @@ button:hover {
 
 @media only screen and (max-width: 1650px) {
     #upper-container {
-        height: 670px;
+        height: 400px;
     }
 
-    #logo-container {
-        top: 18px;
-        right: 17px;
-    }
-
-    #logo-container img {
-        width: 220px;
+    #central-container {
+        padding: 50px 0;
     }
 
     #main-text {
-        margin: 168px auto;
-        margin-bottom: 100px;
-        font-size: 40px;
+        font-size: 57px;
     }
 
-    #text-container {
-        margin-bottom: 20px;
-    }
-
-    #first-paragraph {
-        font-size: 50px;
-    }
-
-    #second-paragraph {
-        font-size: 27px;
-        margin-top: 15px;
+    #registration-container {
+        margin-bottom: 6px;
     }
 
     input[type=text] {
-        width: 500px;
-        height: 40px;
-        margin-bottom: 30px;
-        font-size: 18px;
+        margin-bottom: 26px;
     }
 
     button {
-        width: 375px;
-        height: 36px;
-        font-size: 24px;
-        margin-top: 0;
-        margin-bottom: 12px;
+        margin-bottom: 8px;
     }
 
-    #last-text {
-        margin-top: 84px;
-        font-size: 40px;
+    #steps-container {
+        height: 450px;
     }
-}
 
-@media only screen and (max-width: 1600px) {
-    #last-text {
-        margin-top: 77px;
+    #step1,
+    #step2,
+    #step3 {
+        padding-top: 130px;
     }
 }
 
 @media only screen and (max-width: 1550px) {
     #upper-container {
-        height: 630px;
-    }
-
-    #logo-container {
-        top: 16px;
-        right: 15px;
-    }
-
-    #logo-container img {
-        width: 210px;
+        height: 380px;
     }
 
     #main-text {
-        margin: 165px auto;
-        margin-bottom: 90px;
-        font-size: 35px;
-    }
-
-    #text-container {
-        margin-bottom: 20px;
-    }
-
-    #first-paragraph {
-        font-size: 45px;
-    }
-
-    #second-paragraph {
-        font-size: 22px;
-        margin-top: 12px;
-    }
-
-    input[type=text] {
-        width: 450px;
-        height: 36px;
-        margin-bottom: 25px;
-        font-size: 16px;
-    }
-
-    button {
-        width: 340px;
-        height: 33px;
-        font-size: 22px;
-        margin-top: 0;
-        margin-bottom: 12px;
-    }
-
-    #last-text {
-        margin-top: 105px;
+        font-size: 50px;
     }
 }
 
 @media only screen and (max-width: 1500px) {
-    #last-text {
-        margin-top: 83px;
+    #main-text {
+        margin: 110px auto;
+        margin-bottom: 30px;
+    }
+
+    #steps-container {
+        height: 410px;
+    }
+
+    #step1, #step2, #step3 {
+        padding-top: 120px;
     }
 }
 
 @media only screen and (max-width: 1450px) {
-    #upper-container {
-        height: 600px;
+   #upper-container {
+        height: 360px;
     }
 
     #main-text {
-        margin: 152px auto;
-        margin-bottom: 80px;
-        font-size: 35px;
+        margin: 90px auto;
     }
 
-    #last-text {
-        margin-top: 76px;
-    }
-}
-
-@media only screen and (max-width: 1400px) {
-    #last-text {
-        margin-top: 52px;
+    #step1, #step2, #step3 {
+        padding-top: 110px;
     }
 }
 
 @media only screen and (max-width: 1350px) {
     #upper-container {
-        height: 540px;
+        height: 315px;
     }
 
-    #logo-container img {
-        width: 190px;
-    }
-
-    #main-text {
-        margin: 140px auto;
-        margin-bottom: 75px;
-        font-size: 32px;
-    }
-
-    #last-text {
-        margin-top: 45px;
+    #central-container {
+        padding: 35px 0;
     }
 }
 
 @media only screen and (max-width: 1300px) {
-    #last-text {
-        margin-top: 20px;
+    #upper-container {
+        width: 50%;
+        margin: 80px 165px;
+    }
+
+    #central-container {
+        width: 385px;
+        margin: 0 auto;
+    }
+
+    #steps-container {
+        height: 340px;
     }
 }
 
 @media only screen and (max-width: 1250px) {
     body {
-        background-size: 1400px auto;
+        background-size: 1250px auto;
         background-position: center 0;
     }
 
-    #upper-container {
-        height: 580px;
-    }
-
     #main-text {
-        margin: 155px auto;
-        margin-bottom: 85px;
+        margin-bottom: 20px;
     }
 
-    #logo-container img {
-        width: 170px;
-    }
-
-    #first-paragraph {
-        font-size: 55px;
-    }
-
-    #second-paragraph {
-        font-size: 29px;
-    }
-
-    #last-text {
-        margin-top: 42px;
+    #step1, #step2, #step3 {
+        padding-top: 100px;
+        font-size: 18px;
     }
 }
 
-@media only screen and (max-width: 1250px ) and (orientation: portrait) {
-    body {
-        background-size: 1900px auto;
-        background-position: center 0;
+@media only screen and (max-width: 1150px) {
+    #steps-container {
+        width: 98%;
     }
 
     #upper-container {
-        height: 800px;
+        margin: 80px 130px;
     }
 
-    #main-text {
-        margin: 205px auto;
-        font-size: 47px;
-        margin-bottom: 120px;
-    }
-
-    #logo-container img {
-        width: 170px;
-    }
-
-    input[type=text] {
-        height: 45px;
-        margin-bottom: 35px;
-    }
-
-    button {
-        height: 35px;
-        margin-top: 7px;
-    }
-
-    #terms-policy-container {
-        font-size: 10px;
-        line-height: 14px;
-    }
-
-    #last-text {
-        margin-top: 150px;
+    #step1, #step2, #step3 {
+        font-size: 22px;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    #logo-container img {
-        width: 150px;
+    #upper-container {
+        height: 320px;
+    }
+
+    #main-text {
+        font-size: 40px;
+    }
+
+    #step1, #step2, #step3 {
+        padding-top: 90px;
+        font-size: 18px;
     }
 }
 
 @media only screen and (max-width: 900px) {
-    #logo-container img {
-        width: 120px;
+    body {
+        background-size: 1250px 76%;
     }
 
-    input[type=text] {
-        width: 76%;
+    #steps-container {
+        height: 300px;
     }
+}
 
-    button {
-        width: 58%;
+@media only screen and (max-width: 850px) {
+    body {
+        background-size: 1250px 72%;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    #logo-container img {
-        width: 100px;
+    #upper-container {
+        margin: 80px 110px;
+    }
+
+    #main-text {
+        width: 100%;
+    }
+
+    #step1, #step2, #step3 {
+        padding-top: 80px;
+        font-size: 16px;
     }
 }
 
-@media only screen and (max-width: 650px) {
-    #first-paragraph {
-        font-size: 35px;
+@media only screen and (max-width: 750px) {
+    body {
+        background-size: 1250px 71%;
     }
 
-    #second-paragraph {
-        font-size: 18px;
+    #steps-container {
+        height: 280px;
     }
 
-    #last-text {
-        margin-top: 80px;
-    }
-}
-
-@media only screen and (max-width: 650px) and (orientation: portrait) {
-    #last-text {
-        margin-top: 175px;
+    #step1, #step2, #step3 {
+        padding-top: 70px;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    button {
-        font-size: 18px;
+@media only screen and (max-width: 700px) {
+    body {
+        background-size: 1250px 70%;
     }
-}
 
-@media only screen and (max-width: 500px) {
-    button {
+    #steps-container {
+        height: 260px;
+    }
+
+    #step1, #step2, #step3 {
         font-size: 14px;
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 650px) {
+    body {
+        background-size: auto 1720px;
+        background-position: -538px 0;
+    }
+
+    #upper-container {
+        width: 60%;
+    }
+
+    #steps-container {
+        display: block;
+    }
+
+    #step1, #step2, #step3 {
+        width: 70%;
+        margin: 10px auto;
+        padding-top: 137px;
+        font-size: 25px;
+        height: inherit;
+        background-size: 100% auto;
+    }
+
+    #lower-container {
+        padding-top: 984px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: auto 1700px;
+    }
+
+    #upper-container {
+        width: 90%;
+        margin: 80px auto;
+    }
+
+    #step1, #step2, #step3 {
+        padding-top: 125px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    body {
+        background-size: auto 1650px;
+    }
+
+    #step1, #step2, #step3 {
+        padding-top: 110px;
+    }
+
+    #lower-container {
+        padding-top: 950px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-size: auto 1500px;
+    }
+
+    #step1, #step2, #step3 {
+        padding-top: 100px;
+        font-size: 22px;
+        height: 218px;
+    }
+
+    #lower-container {
+        padding-top: 780px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        background-size: auto 1320px;
+    }
+
     #upper-container {
         width: 100%;
-        margin: 0 auto;
-        height: 830px;
     }
 
-    #main-text {
-        font-size: 42px;
+    #step1, #step2, #step3 {
+        padding-top: 80px;
+        font-size: 18px;
+        height: 185px;
     }
 
-    #first-paragraph {
-        font-size: 28px;
-    }
-
-    #last-text {
-        margin-top: 195px;
+    #lower-container {
+        padding-top: 580px;
     }
 }
