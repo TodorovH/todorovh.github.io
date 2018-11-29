@@ -22,8 +22,8 @@ body {
 }
 
 #upper-container {
-    width: 30%;
-    height: 300px;
+    width: 500px;
+    height: 525px;
     margin: 80px 215px;
 }
 
@@ -31,7 +31,7 @@ body {
     position: absolute;
     top: 20px;
     left: 20px;
-    font-size: 25px;
+    font-size: 50px;
     font-family: vhi;
     color: #fcc506;
 }
@@ -40,7 +40,7 @@ body {
     width: 100%;
     margin: 135px auto;
     margin-bottom: 30px;
-    font-size: 50px;
+    font-size: 65px;
     text-align: center;
     color: #fcc506;
     font-weight: bold;
@@ -48,16 +48,15 @@ body {
 
 #central-container {
     margin: 0;
-    padding: 0;
     background-color: rgba(0,0,0,.5);
-    padding: 20px;
+    padding: 45px;
 }
 
 #registration-container {
     text-align: center;
     color: white;
     margin-bottom: 0;
-    font-size: 23px;
+    font-size: 28px;
 }
 
 #lcb-container {
@@ -66,20 +65,21 @@ body {
 }
 
 input[type=text] {
-    width: 280px;
-    height: 35px;
-    margin-bottom: 20px;
-    font-size: 15px;
+    width: 345px;
+    height: 48px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    font-size: 20px;
     font-weight: bold;
     outline: none;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 button {
-    width: 250px;
-    height: 40px;
-    font-size: 22px;
+    width: 290px;
+    height: 50px;
+    font-size: 27px;
     font-weight: bolder;
     outline: none;
     background-color: #388f13;
@@ -95,7 +95,7 @@ button:hover {
 #lcb-container p,
 #lcb-container a {
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 0;
 }
 
@@ -109,7 +109,7 @@ button:hover {
 #steps-container {
     display: flex;
     width: 80%;
-    height: 320px;
+    height: 575px;
     margin: 0 auto;
 }
 
@@ -119,8 +119,8 @@ button:hover {
     width: 33%;
     text-align: center;
     color: white;
-    padding-top: 100px;
-    font-size: 22px;
+    padding-top: 156px;
+    font-size: 34px;
     font-weight: bold;
     background-image: url('../img/circle.png');
     background-repeat: no-repeat;
@@ -131,7 +131,7 @@ button:hover {
     width: 80%;
     margin: 0 auto;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 18px;
     text-align: justify;
 }
@@ -141,8 +141,13 @@ button:hover {
 }
 
 @media only screen and (max-width: 1650px) {
+    #logo-container {
+        font-size: 35px;
+    }
+
     #upper-container {
         height: 400px;
+        width: 420px;
     }
 
     #central-container {
@@ -150,20 +155,32 @@ button:hover {
     }
 
     #main-text {
-        font-size: 57px;
+        font-size: 55px;
     }
 
     #registration-container {
         margin-bottom: 6px;
+        font-size: 23px;
     }
 
     input[type=text] {
+        width: 280px;
+        height: 35px;
         margin-bottom: 26px;
+        font-size: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 0;
     }
 
     button {
         margin-bottom: 8px;
+        width: 250px;
+        height: 40px;
+        font-size: 22px;
     }
+
+
 
     #steps-container {
         height: 450px;
@@ -173,16 +190,22 @@ button:hover {
     #step2,
     #step3 {
         padding-top: 130px;
+        font-size: 22px;
+    }
+
+    #lcb-container p,
+    #lcb-container a {
+        font-size: 15px;
+    }
+
+    #terms-policy-container {
+        font-size: 14px;
     }
 }
 
 @media only screen and (max-width: 1550px) {
     #upper-container {
         height: 380px;
-    }
-
-    #main-text {
-        font-size: 50px;
     }
 }
 
@@ -208,10 +231,18 @@ button:hover {
 
     #main-text {
         margin: 90px auto;
+        margin-bottom: 30px;
     }
 
     #step1, #step2, #step3 {
         padding-top: 110px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+   #upper-container {
+        height: 360px;
+        margin: 80px 15%;
     }
 }
 
@@ -227,13 +258,7 @@ button:hover {
 
 @media only screen and (max-width: 1300px) {
     #upper-container {
-        width: 50%;
         margin: 80px 165px;
-    }
-
-    #central-container {
-        width: 385px;
-        margin: 0 auto;
     }
 
     #steps-container {
@@ -274,10 +299,6 @@ button:hover {
 @media only screen and (max-width: 1000px) {
     #upper-container {
         height: 320px;
-    }
-
-    #main-text {
-        font-size: 40px;
     }
 
     #step1, #step2, #step3 {
@@ -349,10 +370,6 @@ button:hover {
     body {
         background-size: auto 1720px;
         background-position: -538px 0;
-    }
-
-    #upper-container {
-        width: 60%;
     }
 
     #steps-container {
