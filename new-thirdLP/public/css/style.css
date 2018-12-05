@@ -171,7 +171,7 @@ button:hover {
     color: #e6b133;
 }
 
-@media only screen and (max-width: 1600px) and (orientation: portrait) {
+@media only screen and (max-width: 1600px) {
     #image-container {
         top: 623px;
         right: 85px;
@@ -182,14 +182,14 @@ button:hover {
     }
 }
 
-@media only screen and (max-width: 1400px) and (orientation: portrait) {
+@media only screen and (max-width: 1400px) {
     body {
         background-size: 120% 1200px;
         background-position: center 0;
     }
 }
 
-@media only screen and (max-width: 1200px) and (orientation: portrait) {
+@media only screen and (max-width: 1200px) {
     body {
         background-size: 130% 1200px;
     }
