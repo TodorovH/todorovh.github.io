@@ -182,14 +182,14 @@ button:hover {
     }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1400px) and (orientation: portrait) {
     body {
         background-size: 120% 1200px;
         background-position: center 0;
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) and (orientation: portrait) {
     body {
         background-size: 130% 1200px;
     }
