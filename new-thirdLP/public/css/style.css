@@ -1,0 +1,387 @@
+/*@font-face {
+    src: url('../fonts/HARNGTON.TTF');
+    font-family: harn;
+}
+
+@font-face {
+    src: url('../fonts/comici.ttf');
+    font-family: comic;
+}*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma,Verdana,Segoe,sans-serif;
+    color: #ad8a49;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 1200px;
+    background-color: #0e0500;
+}
+
+#image-container {
+    position: absolute;
+    top: 590px;
+    right: 150px;
+}
+
+#image-container img {
+    width: 340px;
+}
+
+#main-container {
+    margin: 0;
+    padding: 0;
+}
+
+#upper-container {
+    width: 93%;
+    height: 860px;
+    margin: 30px auto;
+}
+
+#logo-container {
+    width: 93%;
+    text-align: center;
+    margin: 20px auto;
+    margin-bottom: 30px;
+}
+
+#logo-container img {
+    width: 700px;
+}
+
+#main-text {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    font-size: 35px;
+    font-family: Cooper Black;
+    text-align: center;
+    color: #653d10;
+    font-weight: bold;
+}
+
+#central-container {
+    margin: 0;
+    padding: 0;
+}
+
+#text-container {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#first-paragraph {
+    font-size: 120px;
+    font-family: Cooper Black;
+    color: #a1380e;
+    margin: 0;
+    padding: 0;
+}
+
+#currencies {
+    color: #a1380e;
+    font-size: 23px;
+    vertical-align: 23px;
+    display: inline-block;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg);
+}
+
+#bonus {
+    color: white;
+    text-shadow: 0 0 15px #653d10;
+    -moz-text-shadow: 0 0 15px #653d10;
+    -webkit-text-shadow: 0 0 15px #653d10;
+}
+
+#second-paragraph {
+    font-size: 31px;
+    font-family: Cooper Black;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+    color: #653d10;
+}
+
+#lcb-container {
+    padding-top: 40px;
+    text-align: center;
+}
+
+input[type=text] {
+    width: 500px;
+    height: 50px;
+    margin-bottom: 30px;
+    font-family: Cooper Black;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button {
+    width: 395px;
+    height: 42px;
+    font-size: 34px;
+    font-weight: bolder;
+    font-family: Cooper Black;
+    outline: none;
+    background-color: #941c1c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 14px;
+    -webkit-transform: scaleY(1.2);
+    transform: scaleY(1.5);
+}
+
+button:hover {
+    background-color: #76892e;
+}
+
+#lcb-container p,
+#lcb-container a {
+    color: #653d10;
+    font-size: 18px;
+}
+
+#lower-container {
+    width: 90%;
+    padding: 30px;
+    margin: 0 auto;
+    color: #e6b133;
+}
+
+#terms-policy-container {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 18px;
+    text-align: justify;
+}
+
+#terms-policy-container a {
+    color: #e6b133;
+}
+
+@media only screen and (max-width: 1600px) {
+    #image-container {
+        top: 623px;
+        right: 85px;
+    }
+
+    #image-container img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    body {
+        background-size: 120% 1200px;
+        background-position: center 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        background-size: 130% 1200px;
+    }
+
+    #image-container {
+        top: 667px;
+        right: 40px;
+    }
+
+    #image-container img {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #logo-container {
+        margin-bottom: 72px;
+    }
+
+    #logo-container img {
+        width: 500px;
+    }
+
+    #first-paragraph {
+        font-size: 100px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #image-container {
+        top: 710px;
+    }
+
+    #image-container img {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    #first-paragraph {
+        font-size: 90px;
+    }
+
+    #currencies {
+        font-size: 18px;
+        vertical-align: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        background-size: 130% 1400px;
+    }
+
+    #logo-container {
+        margin: 40px auto;
+        margin-bottom: 90px;
+    }
+
+    #upper-container {
+        height: 1020px;
+    }
+
+    #main-text {
+        margin-bottom: 75px;
+    }
+
+    #image-container {
+        position: inherit;
+        text-align: center;
+    }
+
+    #image-container img {
+        width: 215px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #first-paragraph {
+        font-size: 80px;
+    }
+
+    input[type=text] {
+        width: 450px;
+    }
+
+    button {
+        width: 340px;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #first-paragraph {
+        font-size: 70px;
+    }
+
+    input[type=text] {
+        width: 400px;
+    }
+
+    button {
+        width: 300px;
+        font-size: 22px;
+    }
+
+    #lcb-container p,
+    #lcb-container a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    body {
+        background-size: 130% 1350px;
+    }
+
+    #upper-container {
+        height: 950px;
+    }
+
+    #first-paragraph {
+        font-size: 60px;
+    }
+
+    #second-paragraph {
+        font-size: 27px;
+    }
+
+    input[type=text] {
+        width: 350px;
+    }
+
+    button {
+        width: 260px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #upper-container {
+        height: 900px;
+    }
+
+    #main-text {
+        font-size: 30px;
+    }
+
+    #first-paragraph {
+        font-size: 50px;
+    }
+
+    #second-paragraph {
+        font-size: 22px;
+    }
+
+    input[type=text] {
+        width: 300px;
+    }
+
+    button {
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #logo-container {
+        width: 96%;
+        margin: 60px auto;
+        margin-bottom: 90px;
+    }
+
+    #logo-container img {
+        width: 350px;
+    }
+
+    #main-text {
+        margin-bottom: 90px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #text-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #second-paragraph {
+        font-size: 20px;
+    }
+
+    #main-text {
+        margin-bottom: 70px;
+    }
+}
