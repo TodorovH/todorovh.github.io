@@ -1,12 +1,7 @@
-/*@font-face {
-    src: url('../fonts/HARNGTON.TTF');
-    font-family: harn;
-}
-
 @font-face {
-    src: url('../fonts/comici.ttf');
-    font-family: comic;
-}*/
+    src: url('../fonts/COOPBL.TTF');
+    font-family: coopbl;
+}
 
 body {
     margin: 0;
@@ -56,7 +51,7 @@ body {
     margin: 0 auto;
     margin-bottom: 65px;
     font-size: 35px;
-    font-family: Cooper Black;
+    font-family: coopbl;
     text-align: center;
     color: #653d10;
     font-weight: bold;
@@ -76,7 +71,7 @@ body {
 
 #first-paragraph {
     font-size: 120px;
-    font-family: Cooper Black;
+    font-family: coopbl;
     color: #a1380e;
     margin: 0;
     padding: 0;
@@ -84,6 +79,7 @@ body {
 
 #currencies {
     color: #a1380e;
+    font-family: coopbl;
     font-size: 23px;
     vertical-align: 23px;
     display: inline-block;
@@ -94,6 +90,7 @@ body {
 
 #bonus {
     color: white;
+    font-family: coopbl;
     text-shadow: 0 0 15px #653d10;
     -moz-text-shadow: 0 0 15px #653d10;
     -webkit-text-shadow: 0 0 15px #653d10;
@@ -101,7 +98,7 @@ body {
 
 #second-paragraph {
     font-size: 31px;
-    font-family: Cooper Black;
+    font-family: coopbl;
     margin: 0;
     margin-top: 20px;
     padding: 0;
@@ -117,7 +114,7 @@ input[type=text] {
     width: 500px;
     height: 50px;
     margin-bottom: 30px;
-    font-family: Cooper Black;
+    font-family: coopbl;
     font-size: 20px;
     font-weight: bold;
     outline: none;
@@ -130,7 +127,7 @@ button {
     height: 42px;
     font-size: 34px;
     font-weight: bolder;
-    font-family: Cooper Black;
+    font-family: coopbl;
     outline: none;
     background-color: #941c1c;
     border: none;
@@ -189,9 +186,24 @@ button:hover {
     }
 }
 
+@media only screen and (max-width: 1400px) and (orientation: portrait) {
+    body {
+        background-size: 120% 1200px;
+        background-position: 0 center;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (orientation: portrait) {
+    body {
+        background-size: 130% 1200px;
+        background-position: 0 center;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     body {
         background-size: 130% 1200px;
+        background-position: center 0;
     }
 
     #image-container {
@@ -239,9 +251,17 @@ button:hover {
     }
 }
 
+@media only screen and (max-width: 900px) and (orientation: portrait) {
+    body {
+        background-size: 130% 1400px;
+        background-position: 0 center;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     body {
         background-size: 130% 1400px;
+        background-position: center 0;
     }
 
     #logo-container {
@@ -302,9 +322,17 @@ button:hover {
     }
 }
 
+@media only screen and (max-width: 650px) and (orientation: portrait) {
+    body {
+        background-size: 130% 1350px;
+        background-position: 0 center;
+    }
+}
+
 @media only screen and (max-width: 650px) {
     body {
         background-size: 130% 1350px;
+        background-position: center 0;
     }
 
     #upper-container {
@@ -383,5 +411,9 @@ button:hover {
 
     #main-text {
         margin-bottom: 70px;
+    }
+
+    input[type=text] {
+        width: 250px;
     }
 }
