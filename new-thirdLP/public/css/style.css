@@ -238,7 +238,7 @@ button:hover {
 
 @media only screen and (max-width: 900px) {
     body {
-        background-size: 100% 1400px;
+        background-size: 130% 1400px;
     }
 
     #logo-container {
@@ -301,7 +301,7 @@ button:hover {
 
 @media only screen and (max-width: 650px) {
     body {
-        background-size: 100% 1350px;
+        background-size: 130% 1350px;
     }
 
     #upper-container {
