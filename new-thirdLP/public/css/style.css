@@ -181,7 +181,7 @@ button:hover {
 
 @media only screen and (max-width: 1400px) {
     body {
-        background-size: 1660px 1200px;
+        background-size: 120% 1200px;
         background-position: center 0;
     }
 }
