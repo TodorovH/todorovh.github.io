@@ -50,7 +50,7 @@ body {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 65px;
-    font-size: 30px;
+    font-size: 35px;
     font-family: coopbl;
     text-align: center;
     color: #653d10;
@@ -70,7 +70,7 @@ body {
 }
 
 #first-paragraph {
-    font-size: 120px;
+    font-size: 110px;
     font-family: coopbl;
     color: #a1380e;
     margin: 0;
