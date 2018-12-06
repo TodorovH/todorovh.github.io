@@ -179,17 +179,17 @@ button:hover {
     }
 }
 
-@media only screen and (max-width: 1400px) and (orientation: portrait) {
-    body {
-        background-size: 120% 1200px;
-        background-position: 0 center;
-    }
-}
-
 @media only screen and (max-width: 1400px) {
     body {
         background-size: 120% 1200px;
         background-position: center 0;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (orientation: portrait) {
+    body {
+        background-size: 120% 1200px;
+        background-position: 0 center;
     }
 }
 
@@ -240,11 +240,11 @@ button:hover {
     }
 }
 
-/* @media only screen and (max-width: 1000px) and (orientation: portrait) {
+@media only screen and (max-width: 1000px) and (orientation: portrait) {
     body {
         background-position: 0 center;
     }
-} */
+}
 
 @media only screen and (max-width: 1000px) {
     body {
@@ -409,14 +409,12 @@ button:hover {
 
 @media only screen and (max-width: 600px) and (orientation: portrait) {
     body {
-        background-size: 130% 1350px;
         background-position: 0 center;
     }
 }
 
 @media only screen and (max-width: 600px) {
     body {
-        background-size: 130% 1350px;
         background-position: center 0;
     }
 
@@ -447,14 +445,12 @@ button:hover {
 
 @media only screen and (max-width: 550px) and (orientation: portrait) {
     body {
-        background-size: 130% 1350px;
         background-position: 0 center;
     }
 }
 
 @media only screen and (max-width: 550px) {
     body {
-        background-size: 130% 1350px;
         background-position: center 0;
     }
 
@@ -475,14 +471,12 @@ button:hover {
 
 @media only screen and (max-width: 500px) and (orientation: portrait) {
     body {
-        background-size: 130% 1350px;
         background-position: 0 center;
     }
 }
 
 @media only screen and (max-width: 500px) {
     body {
-        background-size: 130% 1350px;
         background-position: center 0;
     }
 
