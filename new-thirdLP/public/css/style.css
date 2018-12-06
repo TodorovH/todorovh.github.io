@@ -216,11 +216,11 @@ button:hover {
     }
 }
 
-/* @media only screen and (max-width: 1100px) and (orientation: portrait) {
+@media only screen and (max-width: 1100px) and (orientation: portrait) {
     body {
         background-position: 0 center;
     }
-} */
+}
 
 @media only screen and (max-width: 1100px) {
     body {
@@ -240,11 +240,11 @@ button:hover {
     }
 }
 
-@media only screen and (max-width: 1000px) and (orientation: portrait) {
+/* @media only screen and (max-width: 1000px) and (orientation: portrait) {
     body {
         background-position: 0 center;
     }
-}
+} */
 
 @media only screen and (max-width: 1000px) {
     body {
