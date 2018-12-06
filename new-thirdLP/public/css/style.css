@@ -179,7 +179,7 @@ button:hover {
     }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1400px) and (orientation: landscape) {
     body {
         background-size: 120% 1200px;
         background-position: center 0;
@@ -258,7 +258,7 @@ button:hover {
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) and (orientation: landscape) {
     body {
         background-size: 130% 1400px;
         background-position: center 0;
@@ -329,7 +329,7 @@ button:hover {
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 650px) and (orientation: landscape) {
     body {
         background-size: 130% 1350px;
         background-position: center 0;
