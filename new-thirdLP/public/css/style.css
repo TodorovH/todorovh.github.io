@@ -182,23 +182,23 @@ button:hover {
 @media only screen and (max-width: 1400px) {
     body {
         background-size: 120% 1200px;
-        background-position: center;
+        background-position: center 0;
     }
 }
 
-/* @media only screen and (max-width: 1400px) and (orientation: portrait) {
+/*@media only screen and (max-width: 1400px) and (orientation: portrait) {
     body {
         background-size: 120% 1200px;
         background-position: 0 center;
     }
-} */
+}*/
 
-/* @media only screen and (max-width: 1200px) and (orientation: portrait) {
+/*@media only screen and (max-width: 1200px) and (orientation: portrait) {
     body {
         background-size: 130% 1200px;
         background-position: 0 center;
     }
-} */
+}*/
 
 @media only screen and (max-width: 1200px) {
     body {
@@ -215,13 +215,17 @@ button:hover {
     }
 }
 
-/* @media only screen and (max-width: 1100px) and (orientation: portrait) {
+/*@media only screen and (max-width: 1100px) and (orientation: portrait) {
     body {
         background-position: 0 center;
     }
-} */
+}*/
 
 @media only screen and (max-width: 1100px) {
+    /*body {
+        background-position: center 0;
+    }*/
+
     #logo-container {
         margin-bottom: 72px;
     }
@@ -235,13 +239,17 @@ button:hover {
     }
 }
 
-/* @media only screen and (max-width: 1000px) and (orientation: portrait) {
+/*@media only screen and (max-width: 1000px) and (orientation: portrait) {
     body {
         background-position: 0 center;
     }
-} */
+}*/
 
 @media only screen and (max-width: 1000px) {
+    /*body {
+        background-position: center 0;
+    }*/
+
     #image-container {
         top: 710px;
     }
@@ -251,13 +259,17 @@ button:hover {
     }
 }
 
-/* @media only screen and (max-width: 950px) and (orientation: portrait) {
+/*@media only screen and (max-width: 950px) and (orientation: portrait) {
     body {
         background-position: 0 center;
     }
-} */
+}*/
 
 @media only screen and (max-width: 950px) {
+    /*body {
+        background-position: center 0;
+    }*/
+
     #first-paragraph {
         font-size: 90px;
     }
@@ -268,12 +280,12 @@ button:hover {
     }
 }
 
-/* @media only screen and (max-width: 900px) and (orientation: portrait) {
+/*@media only screen and (max-width: 900px) and (orientation: portrait) {
     body {
         background-size: 130% 1400px;
         background-position: 0 center;
     }
-} */
+}*/
 
 @media only screen and (max-width: 900px) {
     body {
@@ -303,13 +315,17 @@ button:hover {
     }
 }
 
-/* @media only screen and (max-width: 850px) and (orientation: portrait) {
+/*@media only screen and (max-width: 850px) and (orientation: portrait) {
     body {
         background-position: 0 center;
     }
-} */
+}*/
 
 @media only screen and (max-width: 850px) {
+    /*body {
+        background-position: center 0;
+    }*/
+
     #first-paragraph {
         font-size: 80px;
     }
@@ -324,13 +340,17 @@ button:hover {
     }
 }
 
-/* @media only screen and (max-width: 750px) and (orientation: portrait) {
+/*@media only screen and (max-width: 750px) and (orientation: portrait) {
     body {
         background-position: 0 center;
     }
-} */
+}*/
 
 @media only screen and (max-width: 750px) {
+    /*body {
+        background-position: center 0;
+    }*/
+
     #first-paragraph {
         font-size: 70px;
     }
@@ -350,12 +370,12 @@ button:hover {
     }
 }
 
-/* @media only screen and (max-width: 650px) and (orientation: portrait) {
+/*@media only screen and (max-width: 650px) and (orientation: portrait) {
     body {
         background-size: 130% 1350px;
         background-position: 0 center;
     }
-} */
+}*/
 
 @media only screen and (max-width: 650px) {
     body {
@@ -384,13 +404,17 @@ button:hover {
     }
 }
 
-/* @media only screen and (max-width: 600px) and (orientation: portrait) {
+/*@media only screen and (max-width: 600px) and (orientation: portrait) {
     body {
         background-position: 0 center;
     }
-} */
+}*/
 
 @media only screen and (max-width: 600px) {
+    /*body {
+        background-position: center 0;
+    }*/
+
     #upper-container {
         height: 900px;
     }
@@ -416,13 +440,17 @@ button:hover {
     }
 }
 
-/* @media only screen and (max-width: 550px) and (orientation: portrait) {
+/*@media only screen and (max-width: 550px) and (orientation: portrait) {
     body {
         background-position: 0 center;
     }
-} */
+}*/
 
 @media only screen and (max-width: 550px) {
+    /*body {
+        background-position: center 0;
+    }*/
+
     #logo-container {
         width: 96%;
         margin: 60px auto;
@@ -438,13 +466,17 @@ button:hover {
     }
 }
 
-/* @media only screen and (max-width: 500px) and (orientation: portrait) {
+/*@media only screen and (max-width: 500px) and (orientation: portrait) {
     body {
         background-position: 0 center;
     }
-} */
+}*/
 
 @media only screen and (max-width: 500px) {
+    /*body {
+        background-position: center 0;
+    }*/
+
     #text-container {
         width: 90%;
         margin: 0 auto;
