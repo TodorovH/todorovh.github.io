@@ -11,6 +11,7 @@ body {
     background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
     background-size: 100% 1200px;
+    background-position: center 0;
     background-color: #0e0500;
 }
 
@@ -70,12 +71,11 @@ body {
 }
 
 #first-paragraph {
-    font-size: 110px;
+    font-size: 120px;
     font-family: coopbl;
     color: #a1380e;
     margin: 0;
     padding: 0;
-    display: none;
 }
 
 #currencies {
@@ -177,10 +177,6 @@ button:hover {
 
     #image-container img {
         width: 300px;
-    }
-    
-    #first-paragraph {
-        display: block;   
     }
 }
 
