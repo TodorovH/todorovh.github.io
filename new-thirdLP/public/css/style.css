@@ -75,6 +75,7 @@ body {
     color: #a1380e;
     margin: 0;
     padding: 0;
+    display: none;
 }
 
 #currencies {
@@ -176,6 +177,10 @@ button:hover {
 
     #image-container img {
         width: 300px;
+    }
+    
+    #first-paragraph {
+        display: block;   
     }
 }
 
