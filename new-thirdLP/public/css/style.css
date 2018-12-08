@@ -212,6 +212,10 @@ button:hover {
     #first-paragraph {
         font-size: 100px;
     }
+
+    #bonus {
+        font-size: 100px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -232,6 +236,10 @@ button:hover {
     #currencies {
         font-size: 18px;
         vertical-align: 20px;
+    }
+
+    #bonus {
+        font-size: 90px;
     }
 }
 
@@ -268,6 +276,10 @@ button:hover {
         font-size: 80px;
     }
 
+    #bonus {
+        font-size: 80px;
+    }
+
     input[type=text] {
         width: 450px;
     }
@@ -280,6 +292,10 @@ button:hover {
 
 @media only screen and (max-width: 750px) {
     #first-paragraph {
+        font-size: 70px;
+    }
+
+    #bonus {
         font-size: 70px;
     }
 
@@ -311,6 +327,10 @@ button:hover {
         font-size: 60px;
     }
 
+    #bonus {
+        font-size: 60px;
+    }
+
     #second-paragraph {
         font-size: 27px;
     }
@@ -335,6 +355,10 @@ button:hover {
     }
 
     #first-paragraph {
+        font-size: 50px;
+    }
+
+    #bonus {
         font-size: 50px;
     }
 
@@ -373,8 +397,12 @@ button:hover {
         margin: 0 auto;
     }
 
+    #first-paragraph {
+        font-size: 58px;
+    }
+
     #second-paragraph {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     #main-text {
@@ -383,5 +411,12 @@ button:hover {
 
     input[type=text] {
         width: 220px;
+        font-size: 16px;
+    }
+
+    button {
+        width: 200px;
+        height: 30px;
+        font-size: 18px;
     }
 }
