@@ -150,7 +150,7 @@ button:hover {
 
 #lower-container {
     width: 90%;
-    padding: 30px;
+    padding: 30px 0;
     margin: 0 auto;
     color: #e6b133;
 }
@@ -418,5 +418,19 @@ button:hover {
         width: 200px;
         height: 30px;
         font-size: 18px;
+    }
+
+    #terms-policy-container {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 384px) {
+    #logo-container {
+        margin-bottom: 80px;
+    }
+
+    #main-text {
+        margin-bottom: 80px;
     }
 }
