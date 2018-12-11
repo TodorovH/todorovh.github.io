@@ -1,0 +1,456 @@
+@font-face {
+    src: url('../fonts/Viner Hand ITC.ttf');
+    font-family: vhi;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma,Verdana,Segoe,sans-serif;
+    color: #ad8a49;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center-x;
+    background-color: #221a03;
+}
+
+#main-container {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#upper-container {
+    width: 500px;
+    height: 525px;
+    margin: 80px 215px;
+}
+
+#logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 50px;
+    font-family: vhi;
+    color: #fcc506;
+}
+
+#main-text {
+    width: 100%;
+    margin: 135px auto;
+    margin-bottom: 30px;
+    font-size: 65px;
+    text-align: center;
+    color: #fcc506;
+    font-weight: bold;
+}
+
+#central-container {
+    margin: 0;
+    background-color: rgba(0,0,0,.5);
+    padding: 45px;
+}
+
+#registration-container {
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+    font-size: 28px;
+}
+
+#lcb-container {
+    padding-top: 15px;
+    text-align: center;
+}
+
+input[type=text] {
+    width: 345px;
+    height: 48px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button {
+    width: 290px;
+    height: 50px;
+    font-size: 27px;
+    font-weight: bolder;
+    outline: none;
+    background-color: #388f13;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fcaa00;
+    color: #380601;
+}
+
+#lcb-container p,
+#lcb-container a {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+#lower-container {
+    width: 90%;
+    padding: 30px;
+    margin: 0 auto;
+    color: #e6b133;
+}
+
+#steps-container {
+    display: flex;
+    width: 80%;
+    height: 575px;
+    margin: 0 auto;
+}
+
+#step1,
+#step2,
+#step3 {
+    width: 33%;
+    text-align: center;
+    color: white;
+    padding-top: 156px;
+    font-size: 34px;
+    font-weight: bold;
+    background-image: url('../img/circle.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#terms-policy-container {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: justify;
+}
+
+#terms-policy-container a {
+    color: #e6b133;
+}
+
+@media only screen and (max-width: 1650px) {
+    #logo-container {
+        font-size: 35px;
+    }
+
+    #upper-container {
+        height: 400px;
+        width: 420px;
+    }
+
+    #central-container {
+        padding: 50px 0;
+    }
+
+    #main-text {
+        font-size: 55px;
+    }
+
+    #registration-container {
+        margin-bottom: 6px;
+        font-size: 23px;
+    }
+
+    input[type=text] {
+        width: 280px;
+        height: 35px;
+        margin-bottom: 26px;
+        font-size: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 0;
+    }
+
+    button {
+        margin-bottom: 8px;
+        width: 250px;
+        height: 40px;
+        font-size: 22px;
+    }
+
+
+
+    #steps-container {
+        height: 450px;
+    }
+
+    #step1,
+    #step2,
+    #step3 {
+        padding-top: 130px;
+        font-size: 22px;
+    }
+
+    #lcb-container p,
+    #lcb-container a {
+        font-size: 15px;
+    }
+
+    #terms-policy-container {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1550px) {
+    #upper-container {
+        height: 380px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    #main-text {
+        margin: 110px auto;
+        margin-bottom: 30px;
+    }
+
+    #steps-container {
+        height: 410px;
+    }
+
+    #step1, #step2, #step3 {
+        padding-top: 120px;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+   #upper-container {
+        height: 360px;
+    }
+
+    #main-text {
+        margin: 90px auto;
+        margin-bottom: 30px;
+    }
+
+    #step1, #step2, #step3 {
+        padding-top: 110px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+   #upper-container {
+        height: 360px;
+        margin: 80px 15%;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    #upper-container {
+        height: 315px;
+    }
+
+    #central-container {
+        padding: 35px 0;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    #upper-container {
+        margin: 80px 165px;
+    }
+
+    #steps-container {
+        height: 340px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    body {
+        background-size: 1250px auto;
+        background-position: center 0;
+    }
+
+    #main-text {
+        margin-bottom: 20px;
+    }
+
+    #step1, #step2, #step3 {
+        padding-top: 100px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    #steps-container {
+        width: 98%;
+    }
+
+    #upper-container {
+        margin: 80px 130px;
+    }
+
+    #step1, #step2, #step3 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #upper-container {
+        height: 320px;
+    }
+
+    #step1, #step2, #step3 {
+        padding-top: 90px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        background-size: 1250px 76%;
+    }
+
+    #steps-container {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    body {
+        background-size: 1250px 72%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #upper-container {
+        margin: 80px 110px;
+    }
+
+    #main-text {
+        width: 100%;
+    }
+
+    #step1, #step2, #step3 {
+        padding-top: 80px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    body {
+        background-size: 1250px 71%;
+    }
+
+    #steps-container {
+        height: 280px;
+    }
+
+    #step1, #step2, #step3 {
+        padding-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-size: 1250px 70%;
+    }
+
+    #steps-container {
+        height: 260px;
+    }
+
+    #step1, #step2, #step3 {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    body {
+        background-size: auto 1720px;
+        background-position: -538px 0;
+    }
+
+    #steps-container {
+        display: block;
+    }
+
+    #step1, #step2, #step3 {
+        width: 70%;
+        margin: 10px auto;
+        padding-top: 137px;
+        font-size: 25px;
+        height: inherit;
+        background-size: 100% auto;
+    }
+
+    #lower-container {
+        padding-top: 984px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: auto 1700px;
+    }
+
+    #upper-container {
+        width: 90%;
+        margin: 80px auto;
+    }
+
+    #step1, #step2, #step3 {
+        padding-top: 125px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    body {
+        background-size: auto 1650px;
+    }
+
+    #step1, #step2, #step3 {
+        padding-top: 110px;
+    }
+
+    #lower-container {
+        padding-top: 950px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-size: auto 1500px;
+    }
+
+    #step1, #step2, #step3 {
+        padding-top: 100px;
+        font-size: 22px;
+        height: 218px;
+    }
+
+    #lower-container {
+        padding-top: 780px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        background-size: auto 1320px;
+    }
+
+    #upper-container {
+        width: 100%;
+    }
+
+    #step1, #step2, #step3 {
+        padding-top: 80px;
+        font-size: 18px;
+        height: 185px;
+    }
+
+    #lower-container {
+        padding-top: 580px;
+    }
+}
