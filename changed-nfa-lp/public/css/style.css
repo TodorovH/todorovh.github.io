@@ -11,17 +11,18 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('../img/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: black;
+    background-color: #5d4c30;
     font-family: ush;
     color: white;
 }
 
 #main-container {
     width: 100%;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 20px;
 }
 
 #logo-container {
@@ -41,7 +42,7 @@ body {
 
 #central-container {
     width: 80%;
-    margin: 85px auto;
+    margin: 135px auto;
     margin-bottom: 0;
     text-align: center;
 }
@@ -108,15 +109,6 @@ body {
     text-align: left;
 }
 
-#arrow {
-    border-right:2px solid white;
-    border-bottom:2px solid white;
-    width:10px;
-    height:10px;
-    transform: rotate(-45deg);
-    margin-top:40px;
-}
-
 #list-container ul {
     font-family: ust;
     font-size: 33px;
@@ -173,42 +165,66 @@ body {
     color: white;
 }
 
+#more {
+    width: 100%;
+    text-align: center;
+    margin-top: 45px;
+    font-family: ust;
+}
+
+#arrow {
+    width: 10%;
+    margin: 0 auto;
+    margin-top: -15px;
+}
+
+#arrow:before {
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    width: 50px;
+    height: 50px;
+    transform: rotate(-45deg);
+    content: "";
+    display: inline-block;
+}
+
 #extra-text {
-    width: 50%;
-    font-family: Tahoma;
-    text-align: left;
-    margin: 10px auto;
-}
-
-#extra-text-header {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-#extra-text-desc {
+    margin: 50px auto;
     font-size: 18px;
-    font-weight: normal;
 }
 
-#extra-text ul {
-    font-family: Tahoma;
-    text-align: left;
-    font-size: 18px;
-    font-weight: normal;
-    padding-left: 22px;
+#extra-text div {
+    width: 60%;
+    background-color: white;
+    color: #5d4c30;
+    padding: 30px 50px;
+    margin: 30px auto;
+    box-shadow: 10px 10px 15px #aa8753;
 }
 
-.first {
-    list-style-type: disc;
+#extra-text div:first-child {
+    width: 70%;
+    background-color: white;
+    color: #5d4c30;
+    padding: 30px 50px;
+    padding-bottom: 50px;
+    margin: 30px auto;
+    box-shadow: 10px 10px 15px #aa8753;
 }
 
-.second {
-    list-style-type: circle;
+#extra-text div div,
+#extra-text div div:first-child {
+    width: 70%;
+    background-color: #5d4c30;
+    color: white;
+    padding: 30px 50px;
+    margin: 30px auto;
+    box-shadow: 10px 10px 15px #aa8753;
 }
 
 @media only screen and (max-width: 1600px) {
     #central-container {
-        margin: 85px auto;
+        margin: 135px auto;
         margin-bottom: 50px;
     }
 
@@ -267,7 +283,7 @@ body {
     }
 
     #central-container {
-        margin: 90px auto;
+        margin: 250px auto;
         margin-bottom: 50px;
     }
 
@@ -318,33 +334,32 @@ body {
 
 	#register {
         width: 300px;
-	    margin-top: 30px;
+	    margin-top: 70px;
 	}
 
 	#last-text {
 		font-size: 22px;
 	}
-
-    #extra-text {
-        width: 70%;
-        margin-top: 70px;
-    }
 }
 
 @media only screen and (max-width: 1100px) {
     #logo-container {
-	    margin-top: 30px;
+	    padding-top: 30px;
 	}
 
     #central-container {
         width: 100%;
-        margin: 130px auto;
+        margin: 300px auto;
         margin-bottom: 50px;
     }
 
     #register {
         font-family: ush;
-        margin-top: 50px;
+        margin-top: 100px;
+    }
+
+    #extra-text {
+        font-size: 15px;
     }
 }
 
@@ -366,10 +381,6 @@ body {
     #last-text {
         width: 90%;
     }
-
-    #extra-text {
-        width: 80%;
-    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -390,7 +401,7 @@ body {
     }
 
     #extra-text {
-        width: 90%;
+        font-size: 12px;
     }
 }
 
@@ -401,18 +412,6 @@ body {
 
     #list-container {
         width: 90%;
-    }
-
-    #extra-text-header {
-        font-size: 18px;
-    }
-
-    #extra-text-desc {
-        font-size: 15px;
-    }
-
-    #extra-text ul {
-        font-size: 15px;
     }
 }
 
@@ -439,5 +438,9 @@ body {
 
     #period-container div:last-child div:last-child {
         font-size: 40px;
+    }
+
+    #extra-text {
+        font-size: 10px;
     }
 }
