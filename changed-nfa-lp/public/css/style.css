@@ -132,12 +132,19 @@ body {
     vertical-align: 5px;
 }
 
-#button-container {
+#button-container,
+#button-container2 {
     width: 100%;
     margin: 0 auto;
 }
 
-#register {
+#button-container2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#register,
+#register2 {
     width: 400px;
     height: 70px;
     font-family: ush;
@@ -149,10 +156,10 @@ body {
     background-color: rgba(235,191,118,0.5);
     outline: none;
     margin: 0 auto;
-    padding-top: 7px;
 }
 
-#register:hover {
+#register:hover,
+#register2:hover {
     background-color: #ebbf76;
     opacity: 1;
 }
@@ -169,7 +176,8 @@ body {
     width: 100%;
     text-align: center;
     margin-top: 45px;
-    font-family: ust;
+    font-family: ush;
+    font-size: 20px;
 }
 
 #arrow {
@@ -337,6 +345,15 @@ body {
 	    margin-top: 70px;
 	}
 
+    #register2 {
+        width: 300px;
+        margin-top: 0;
+    }
+
+    #more {
+        font-size: 18px;
+    }
+
 	#last-text {
 		font-size: 22px;
 	}
@@ -354,8 +371,11 @@ body {
     }
 
     #register {
-        font-family: ush;
         margin-top: 100px;
+    }
+
+    #register2 {
+        margin-top: 0;
     }
 
     #extra-text {
