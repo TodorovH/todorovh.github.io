@@ -230,6 +230,10 @@ $(document).ready(function() {
             this.innerHTML = "SPIN";
         }
     });
+	
+    $('#info-btn').click(function() {
+        showPopup();
+    });
 
     $('#cover-container').click(function(event) {
         if($(event.target)[0].id === "cover-container") hidePopup();
