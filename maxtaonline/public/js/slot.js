@@ -162,14 +162,22 @@ $(document).ready(function() {
     };
 
     function enableControl() {
-        $('#spin-btn').attr("disabled", false);
+        $('.spin-btn').each(function() {
+            $(this).attr("disabled", false);
+        });
     }
 	 function ClickControl() {
-        $('#spin-btn').trigger("click");
+        $('.spin-btn').each(function() {
+            if ($(this).is(':visible')) {
+                $(this).trigger("click");
+            }
+        });
     }
 
     function disableControl() {
-        $('#spin-btn').attr("disabled", true);
+        $('.spin-btn').each(function() {
+            $(this).attr("disabled", true);
+        });
     }
 
     function showPopup() {
@@ -188,51 +196,55 @@ $(document).ready(function() {
     /**
     * Slot machine controller
     */
-    $('#spin-btn').click(function() {
-        var x;
-        if(this.innerHTML == "SPIN") {
-            a.start();
-            b.start();
-            c.start();
-            this.innerHTML = "Stop";
-            
-            disableControl(); //disable control until the slots reach max speed
-            
-            //check every 100ms if slots have reached max speed 
-            //if so, enable the control
-            x = window.setInterval(function() {
-                if(a.speed >= a.maxSpeed && b.speed >= b.maxSpeed && c.speed >= c.maxSpeed) {
-                    ClickControl();
-                    window.clearInterval(x);
-                }
-            }, 100);
-        } else if(this.innerHTML == "Stop") {
-            a.stop();
-            b.stop();
-            c.stop();
-            this.innerHTML = "Reset";
+    $('.spin-btn').each(function() {
+        $(this).click(function() {
+            var x;
+            if(this.innerHTML == "SPIN") {
+                a.start();
+                b.start();
+                c.start();
+                this.innerHTML = "Stop";
+                
+                disableControl(); //disable control until the slots reach max speed
+                
+                //check every 100ms if slots have reached max speed 
+                //if so, enable the control
+                x = window.setInterval(function() {
+                    if(a.speed >= a.maxSpeed && b.speed >= b.maxSpeed && c.speed >= c.maxSpeed) {
+                        ClickControl();
+                        window.clearInterval(x);
+                    }
+                }, 100);
+            } else if(this.innerHTML == "Stop") {
+                a.stop();
+                b.stop();
+                c.stop();
+                this.innerHTML = "Reset";
 
-            disableControl(); //disable control until the slots stop
-            
-            //check every 100ms if slots have stopped
-            //if so, enable the control
-            x = window.setInterval(function() {
-                if(a.speed === 0 && b.speed === 0 && c.speed === 0 && completed === 3) {
-                    enableControl();ClickControl();
-                    window.clearInterval(x);
-                    showPopup();
-                }
-            }, 100);
-        } else { //reset
-            a.reset();
-            b.reset();
-            c.reset();
-            this.innerHTML = "SPIN";
-        }
+                disableControl(); //disable control until the slots stop
+                
+                //check every 100ms if slots have stopped
+                //if so, enable the control
+                x = window.setInterval(function() {
+                    if(a.speed === 0 && b.speed === 0 && c.speed === 0 && completed === 3) {
+                        enableControl();ClickControl();
+                        window.clearInterval(x);
+                    }
+                }, 100);
+            } else { //reset
+                a.reset();
+                b.reset();
+                c.reset();
+                this.innerHTML = "SPIN";
+                setTimeout(showPopup, 100);
+            }
+        });
     });
 
-    $('#info-btn').click(function() {
-        showPopup();
+    $('.info-btn').each(function() {
+        $(this).click(function() {
+            showPopup();
+        });
     });
 
     $('.popup-close').click(function() {
