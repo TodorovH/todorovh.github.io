@@ -365,6 +365,10 @@ input[type=checkbox] {
     	margin-bottom: 0;
     }
 
+    #star3 {
+	    margin-bottom: 0;
+	}
+
     #buttons {
 		display: none;
 	}
