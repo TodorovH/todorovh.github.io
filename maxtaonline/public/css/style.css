@@ -19,7 +19,6 @@ body {
 #left-side {
 	background-color: white;
 	align-items: center;
-	/*text-align: center;*/
 }
 
 #logo {
@@ -65,14 +64,51 @@ body {
 }
 
 #header {
-	font-size: 50px;
+	font-size: 55px;
 	font-weight: 800;
-	color: #411b98;
+	/*color: #411b98;*/
 	-webkit-transform: scaleY(1.6);
     transform: scaleY(1.6);
-    margin-bottom: 70px;
     font-family: sans-serif;
     text-align: center;
+    background-image: linear-gradient(to bottom, white, #411b98);
+  	color: transparent;
+  	-webkit-background-clip: text;
+  	background-clip: text;
+  	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #a00000;
+}
+
+#star1,
+#star2,
+#star3 {
+	position: relative;
+	background:url("../img/star.png") no-repeat;
+	background-size: contain;
+}
+
+#star1 {
+	width: 50px;
+	height: 50px;
+    margin-left: 30%;
+    transform: rotate(30deg);
+}
+
+#star2 {
+	width: 40px;
+	height: 40px;
+	margin-left: 20%;
+    transform: rotate(-30deg);
+    z-index: 999;
+}
+
+#star3 {
+	width: 60px;
+	height: 60px;
+	margin-left: 75%;
+	margin-top: -100px;
+    transform: rotate(-45deg);
+    margin-bottom: 160px;
 }
 
 #buttons,
@@ -232,11 +268,31 @@ path {
 
 input[type=text] {
 	margin-top: 30px;
-    width: 350px;
+    width: 250px;
     height: 30px;
     padding: 0 10px;
     border-radius: 5px;
     outline: none;
+    text-align: center;
+    background-color: orange;
+    border-color: black;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
+  font-weight: bold;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+  font-weight: bold;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+  font-weight: bold;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: black;
+  font-weight: bold;
 }
 
 input[type=checkbox] {
@@ -248,13 +304,14 @@ input[type=checkbox] {
     width: 180px;
     height: 45px;
     border-radius: 10px;
-    font-size: 10px;
-    font-weight: 800;
+    font-size: 22px;
+    font-weight: bold;
     outline: none;
+    background-color: orange;
+    border-color: black;
 }
 
 #lcb-container button:hover {
-    font-size: 12px;
     cursor: pointer;
 }
 
@@ -364,8 +421,10 @@ input[type=checkbox] {
 		width: 80%;
 		margin: 0 auto;
 	}
+}
 
+@media only screen and (max-width: 450px) {
 	input[type=text] {
-	    width: 80%;
+	    width: 70%;
 	}
 }
