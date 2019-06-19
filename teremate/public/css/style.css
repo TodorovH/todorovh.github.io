@@ -149,14 +149,19 @@ input[type=checkbox] {
     font-size: 15px;
 }
 
-#lcb-container>p {
+#first {
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 0;
+}
+
+#second {
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 #lcb-container p:last-child {
 	width: 90%;
-	margin: 0 auto;
+	margin: 15px auto;
 	margin-bottom: 50px;
 }
 
@@ -195,7 +200,7 @@ input[type=checkbox] {
     width: 80%;
     margin: 0 auto;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 18px;
     text-align: justify;
 }
@@ -244,11 +249,12 @@ input[type=checkbox] {
 	}
 
 	#logo {
+		position: relative;
 		width: 260px;
 		height: 90px;
 		border-radius: 50% / 50%;
-		top: 0;
-		left: 0;
+		top: -45px;
+		left: 10px;
 	}
 
 	#logo-text {
@@ -274,6 +280,10 @@ input[type=checkbox] {
 
 	#bonus-container>div {
 		width: 45%;
+	}
+
+	#terms-policy-container {
+	    font-size: 12px;
 	}
 }
 
