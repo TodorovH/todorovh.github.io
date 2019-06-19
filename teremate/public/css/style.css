@@ -19,15 +19,17 @@ body {
 }
 
 #logo {
-	position: absolute;
-	width: 300px;
-	height: 150px;
-	border-radius: 150px / 75px;
-	top: 780px;
-	left: 50px;
-	display: inline-flex;
-	align-items: center;
-	background-color: white;
+	position: relative;
+    width: 300px;
+    height: 100px;
+    border-radius: 150px / 75px;
+    top: -75px;
+    left: 50px;
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 #logo-text {
@@ -36,7 +38,7 @@ body {
 	font-size: 50px;
 	font-weight: bold;
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: center;
 	color: #980e06;
 	font-family: "Courier New", Courier, monospace;
@@ -167,7 +169,7 @@ input[type=checkbox] {
 
 #middle {
 	width: 100%;
-	height: 80px;
+	height: 40px;
 	background-color: white;
 }
 
@@ -175,7 +177,8 @@ input[type=checkbox] {
 	width: 55%;
 	height: 100%;
 	background:url("../img/background.png") no-repeat;
-	background-size: cover;
+	background-size: 100% auto;
+	background-position: center;
 }
 
 #top-side-mobile {
@@ -249,12 +252,13 @@ input[type=checkbox] {
 	}
 
 	#logo {
-		position: relative;
 		width: 260px;
 		height: 90px;
 		border-radius: 50% / 50%;
 		top: -45px;
 		left: 10px;
+	    border-bottom-left-radius: 0px;
+    	border-bottom-right-radius: 0px;
 	}
 
 	#logo-text {
