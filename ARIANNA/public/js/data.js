@@ -16,7 +16,7 @@ var DataObjects = [
         description: "Arianna's mineral-enriched hand cream was specifically designed" + 
         "to penetrate quickly to protect, nourish and elevate moisture in the hands while" +
         "protecting them from environmental elements and household damage.",
-        availability: "in stock",
+        availability: "IN STOCK",
         SKU: 'AR111'
     },
     {
@@ -36,7 +36,7 @@ var DataObjects = [
         description: "Arianna's best selling Ultra Rich Mineral Body Butter is the ultimate" + 
         "spa-strength solution for extra dry and sensitive skin. Its superb blend of dead sea" +
         "minerals, natural plant extracts and Shea butter targets dry, damaged skin to provide 24 hour intense-hydration.",
-        availability: "in stock",
+        availability: "IN STOCK",
         SKU: 'AR105'
     },
     {
@@ -54,7 +54,7 @@ var DataObjects = [
         ],
         description: "A raw, gentle salt scrub featuring luminous crystals to exfoliate deeply" +
         "and rejuvenate dry, rough skin. For skin that’s smooth, hydrated, and glowing.",
-        availability: "in stock",
+        availability: "IN STOCK",
         SKU: "AR101"
     },
     {
@@ -75,7 +75,7 @@ var DataObjects = [
         "moisturize and improve blood circulation while simultaneously reducing the appearance of" +
         "puffy-looking eyes and dark circles. This Eye Serum is ultra-gentle while being uncompromisingly" +
         "effective, with an immediate tightening effect on the skin to smooth out wrinkles.",
-        availability: 'in stock',
+        availability: 'IN STOCK',
         SKU: "AR303"
     },
     {
@@ -98,7 +98,7 @@ var DataObjects = [
         "synthesis, while delivering a powerful dose of vitamins to the cells. The skin renewal facial peel is" +
         "infused with nourishing Dead Sea Minerals. This non-abrasive peel will leave your skin feeling radiant" +
         "and revitalized.",
-        availability: "in stock",
+        availability: "IN STOCK",
         SKU: "AR313"
     },
     {
@@ -115,7 +115,7 @@ var DataObjects = [
         ],
         description: "The Hydrating Mineral Body Lotion is a light, softly scented, richly emollient" +
         "lotion designed for daily use by people with all skin types.",
-        availability: "in stock",
+        availability: "IN STOCK",
         SKU: "AR108"
     },
     {
@@ -134,7 +134,7 @@ var DataObjects = [
         "the delicate skin around the eyes, creating an appearance of health and radiance. It improves blood" +
         "circulation, evens out skin tone and helps to provide an immediate lifting & tightening effect to" +
         "smooth out fine lines & wrinkles.",
-        availability: "in stock",
+        availability: "IN STOCK",
         SKU: "AR307"
     },
     {
@@ -154,7 +154,7 @@ var DataObjects = [
         description: "Our Skin Balance Revitalizing Gel Cream is water-based and targets normal-oily skin." +
         "This light gel cream instantly cools and refreshes skin, providing intensive 24-hour hydration while" +
         "strengthening skin’s natural barrier in order to prevent future moisture loss leaving skin surface smooth & refreshed.",
-        availability: 'in stock',
+        availability: 'IN STOCK',
         SKU: "AR302"
     },
     {
@@ -173,7 +173,7 @@ var DataObjects = [
         "active ingredients that target specific aging issues and prevent damage from free radicals. The added" +
         "Colloidal Gold actively reduces general signs of aging like expression lines, wrinkles and age spots" +
         "while simultaneously restoring moisture and nourishment.",
-        availability: "in stock",
+        availability: "IN STOCK",
         SKU: "AR304"
     },
     {
@@ -193,7 +193,7 @@ var DataObjects = [
         description: "Arianna's cleansing Mud Gel Face Wash is known for its beneficial properties and ability to" +
         "clear the skin surface of pore-clogging impurities such as dirt, oil, makeup, and impurities. The gel restores" +
         "the natural pH balance while delivering vitamins and oils essential for a glowing, healthy look.",
-        availability: "in stock",
+        availability: "IN STOCK",
         SKU: "AR403"
     }
 ];

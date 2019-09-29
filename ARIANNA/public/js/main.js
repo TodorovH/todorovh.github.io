@@ -7,7 +7,9 @@ $(document).ready(function () {
         var item = document.createElement("div");
         item.innerHTML = "<div id='" + object.id + "' class='offer'>" +
                             "<div class='offer-left'>" +
-                                "<img src='" + object.img + "' alt='" + object.title + "'>" +
+                                "<div>" +
+                                    "<img src='" + object.img + "' alt='" + object.title + "'>" +
+                                "</div>" +
                                 "<h6>" + object.title + "</h6>" +
                             "</div>" +
                             "<div class='offer-center'>" +
@@ -24,83 +26,115 @@ $(document).ready(function () {
                                 "</div>" +
                             "</div>" +
                             "<div class='offer-right'>" +
-                                // "<div onclick='showPopup(" + object.id + ");'><h4>ADD TO CART</h4></div>" +
-                                "<div onclick='showPopup(66);'><h4>ADD TO CART</h4></div>" +
+                                "<div onclick=\"showPopup('" + object.id + "');\"><h4>ADD TO CART</h4></div>" +
                             "</div>" +
                         "</div>";
         document.getElementById("all-offers-container").appendChild(item);
+
+        var item2 = document.createElement("div");
+        item2.classList.add("carousel-offer");
+        item2.setAttribute("onclick", "showPopup('" + object.id + "')");
+        item2.innerHTML = "<div class='carouser-offer-container-img'>" +
+                                "<img src='" + object.img + "' alt='" + object.title + "'>" +
+                            "</div>" +
+                            "<div class='carousel-offer-title'>" + object.title + "</div>" +
+                            "<div class='carousel-offer-stars'>" +
+                                "<img src='public/img/star.png'>" +
+                                "<img src='public/img/star.png'>" +
+                                "<img src='public/img/star.png'>" +
+                                "<img src='public/img/star.png'>" +
+                                "<img src='public/img/star.png'>" +
+                            "</div>" +
+                            "<div class='carousel-offer-price'>" + object.price + "</div>" +
+                            "<div class='fake-btn'>ADD TO CART</div>";
+        document.getElementById("carousel-offers-container").appendChild(item2);
+    });
+
+    $('.carousel').slick({
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: $('.slick-prev'),
+        nextArrow: $('.slick-next'),
+        responsive: [{
+            breakpoint: 950,
+            settings: {
+              slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 750,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
     });
 });
 
-var addToCartUrl = 'https://www.arianna-skincare.com/checkout/cart/add/uenc/aHR0cDovLzEyNy4wLjAuMS9uZXN0by9jb29sb3IuaHRtbA%2C%2C/product/66/';
-var myData = {
-    'form_key': 'CwXVQbS39ntxYJKc' 
-};
-var addToCartUrl2 = 'https://www.arianna-skincare.com/checkout/cart/add?product=66&qty=1&form_key=CwXVQbS39ntxYJKc&uenc=aHR0cDovLzEyNy4wLjAuMS9uZXN0by9jb29sb3IuaHRtbA%2C%2C'
-
 function showPopup(objID) {
-    $.ajax({
-        url: addToCartUrl,
-        headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Content-Type": "application/json",
-            "Authority": "www.arianna-skincare.com",
-            'Host': 'www.arianna-skincare.com',
-            'Origin': 'todorovh.github.io',
-            'Access-Control-Request-Method': 'put',
-            'Access-Control-Allow-Credentials': 'true',
-            "Access-Control-Allow-Headers": "Content-Length",
-            "Access-Control-Expose-Headers": "Content-Length",
-            "Referer": "https://www.arianna-skincare.com/ultra-rich-mineral-body-butter.html",
-            "User-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36",
-            //"Sec-fetch-mode": "no-cors",
-            //"Cookie": document.cookie
-        },
-        method: 'POST',
-        dataType: 'json',
-        //data: myData,
-        success: function(data){
-            console.log('success: ' + data);
+    var popupItem = document.getElementById("popup-container").innerHTML = "";
+    DataObjects.forEach(function(object) {
+        if (objID === object.id) {
+            var item = document.createElement("div");
+            item.innerHTML = "<div id='popup'>" +
+                                "<div id='popup-left'>" +
+                                    "<div class='popup-close' onclick=\"closePopup();\">X</div>" +
+                                    "<div id='popup-left-img-container'>" +
+                                        "<img src='" + object.img + "' alt='" + object.title + "'>" +
+                                    "</div>" +
+                                "</div>" +
+                                "<div id='popup-right'>" +
+                                    "<h2>" + object.title + "</h2>" +
+                                    "<div id='stars-container'>" +
+                                        "<img src='public/img/star.png'>" +
+                                        "<img src='public/img/star.png'>" +
+                                        "<img src='public/img/star.png'>" +
+                                        "<img src='public/img/star.png'>" +
+                                        "<img src='public/img/star.png'>" +
+                                    "</div>" +
+                                    "<div id='price-availability'>" +
+                                        "<div id='popup-price'>" +
+                                            "<div>Price</div>" +
+                                            "<div class='popup-price'>" + object.price + "</div>" +
+                                        "</div>" +
+                                        "<div id='popup-availability'>" +
+                                            "<div class='avail'>" + object.availability + "</div>" +
+                                            "<div id='sku'>SKU#: " + object.SKU + "</div>" +
+                                        "</div>" +
+                                    "</div>" +
+                                    "<div id='features'></div>" +
+                                    "<div id='desc'>" + object.description + "</div>" +
+                                    "<div id='img-features'>" +
+                                        "<img src='public/img/NATURAL-SKINCARE-ICONS-VEGAN.png' alt=''>" +
+                                    "</div>" +
+                                    "<form action='#' methon='post'>" +
+                                        "<input type='number' name='' id='quantity' value='1' min='0'>" +
+                                        "<button type='submit' id='popup-btn'>ADD TO CART</button>" +
+                                    "</form>" +
+                                    "<div id='popup-money-back'>" +
+                                        "<img src='public/img/guarantee.png' alt=''>" +
+                                    "</div>" +
+                                "</div>" +
+                            "</div>";
+
+            var popupItem = document.getElementById("popup-container");
+            popupItem.appendChild(item);
+            var itemUl = document.createElement("ul");
+            var strLis = '';
+
+            object.features.forEach(function(feature) {
+                strLis += "<li class='feature'>" + feature + "</li>";
+            });
+
+            itemUl.innerHTML = strLis;
+            document.getElementById("features").appendChild(itemUl);
+            popupItem.style.display = "block";
         }
     });
+}
 
-    // var xhr = new XMLHttpRequest();
-
-    // xhr.open('POST', addToCartUrl, true);
-    // xhr.setRequestHeader('Content-Type', 'text/x-magento-init');
-    // //xhr.setRequestHeader('Host', 'https://www.arianna-skincare.com');
-    // //xhr.setRequestHeader('Origin', 'https://www.arianna-skincare.com');
-    // xhr.setRequestHeader('Access-Control-Allow-Origin', 'https://www.arianna-skincare.com');
-    // xhr.setRequestHeader('Access-Control-Allow-Credentials', 'true');
-    // xhr.setRequestHeader('Access-Control-Allow-Headers', 'Content-Length');
-    // xhr.setRequestHeader('Access-Control-Expose-Headers', 'Content-Length');
-    // xhr.onload = function() {
-    //     if (xhr.status === 200 && xhr.responseText !== '') {
-    //         alert('Something went wrong.  Name is now ' + xhr.responseText);
-    //     }
-    //     else if (xhr.status !== 200) {
-    //         alert('Request failed.  Returned status of ' + xhr.status);
-    //     }
-    // };
-    // xhr.send(null);
-
-    // fetch(
-    //     addToCartUrl,
-    //     {   method: 'POST',
-    //         mode: 'cors',
-    //         headers: new Headers(
-    //            {
-    //                 "Content-Type":                 "application/json",
-    //                 "Accept":                       "application/json",
-    //                 "Access-Control-Allow-Origin":  "https://www.arianna-skincare.com",
-    //                 "Origin":                       "https://www.arianna-skincare.com",
-    //                 "set-cookie": "PHPSESSID=5h3ps20a5fk0rd7lga5fv9vud4; Max-Age=3600; path=/; domain=www.arianna-skincare.com; secure; HttpOnly"
-    //             }
-    //         ),
-    //         body: JSON.stringify(
-    //            {'form_key': 'CwXVQbS39ntxYJKc'}
-    //         )
-    //      }
-    //    ).then( response => { console.log(response);})
-    //     .catch(err => console.log(err))
+function closePopup() {
+    document.getElementById("popup-container").style.display = "none";
 }
