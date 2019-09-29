@@ -18,8 +18,14 @@
 			</div>
 			<div id="carousel-container">
 				<h3>BEST SELLING OFFERS</h3>
-				<div id="carousel">
+				<div id='inner-carousel-container'>
+					<button type="button" data-role="none" class="slick-prev slick-arrow" 
+					aria-label="Previous" role="button" style="display: block;">Previous</button>
 
+					<div class="carousel" id="carousel-offers-container"></div>
+
+					<button type="button" data-role="none" class="slick-next slick-arrow" 
+					aria-label="Next" role="button" style="display: block;">Next</button>
 				</div>
 			</div>
 			<div id="all-offers-container">
@@ -28,43 +34,47 @@
 			</div>
 			<div id="main-footer">
 				<div id="upper-footer">
-					<div id="return" class="upper-footer-item">
-						<img src="public/img/icon-gift.png" />
-						<h3>RETURN POLICY</h3>
-						<p>
-							Arianna Skincare quarantees a NO-RISK, 14-day money-back policy on online
-							purchases only! Simply return your goods with at least 70% remaining for
-							a full refund.
-						</p>
+					<div id="upper-footer-1">
+						<div id="return" class="upper-footer-item">
+							<img src="public/img/icon-gift.png" />
+							<h3>RETURN POLICY</h3>
+							<p>
+								Arianna Skincare quarantees a NO-RISK, 14-day money-back policy on online
+								purchases only! Simply return your goods with at least 70% remaining for
+								a full refund.
+							</p>
+						</div>
+						<div id="secure" class="upper-footer-item">
+							<img src="public/img/icon-wallet.png" />
+							<h3>SECURE PAYMENT</h3>
+							<p>
+								We accept the following forms of payment on our website: Visa, Mastercard,
+								American Express, Discover. Your security is important to us and your personal
+								information is safeguarded with SSL encryption.
+							</p>
+						</div>
 					</div>
-					<div id="secure" class="upper-footer-item">
-						<img src="public/img/icon-wallet.png" />
-						<h3>SECURE PAYMENT</h3>
-						<p>
-							We accept the following forms of payment on our website: Visa, Mastercard,
-							American Express, Discover. Your security is important to us and your personal
-							information is safeguarded with SSL encryption.
-						</p>
-					</div>
-					<div id="shipping" class="upper-footer-item">
-						<img src="public/img/icon-plan.png" />
-						<h3>SHIPPING</h3>
-						<p>
-							COMPLIMENTARY SHIPPING ON ALL ORDERS ABOVE $200. For worldwide shipping
-							please contact customer service department.<br/>
-							<span>Customerservice@arianna-skincare.com</span>
-						</p>
-					</div>
-					<div id="customer" class="upper-footer-item">
-						<img src="public/img/icon-earphones.png" />
-						<h3>CUSTOMER SERVICE</h3>
-						<p>
-							For Customer Service, professional Skincare advice, and purchase inquires
-							please contact the Arianna Team<br/>
-							Monday - Friday<br/>
-							9:30 am - 5:30 pm<br/>
-							888-330-1423
-						</p>
+					<div id="upper-footer-2">
+						<div id="shipping" class="upper-footer-item">
+							<img src="public/img/icon-plan.png" />
+							<h3>SHIPPING</h3>
+							<p>
+								COMPLIMENTARY SHIPPING ON ALL ORDERS ABOVE $200. For worldwide shipping
+								please contact customer service department.<br/>
+								<span>Customerservice@arianna-skincare.com</span>
+							</p>
+						</div>
+						<div id="customer" class="upper-footer-item">
+							<img src="public/img/icon-earphones.png" />
+							<h3>CUSTOMER SERVICE</h3>
+							<p>
+								For Customer Service, professional Skincare advice, and purchase inquires
+								please contact the Arianna Team<br/>
+								Monday - Friday<br/>
+								9:30 am - 5:30 pm<br/>
+								888-330-1423
+							</p>
+						</div>
 					</div>
 				</div>
 				<div id="lower-footer">
@@ -132,18 +142,10 @@
 				</div>
 			</div>
 		</div>
-
-		<form action="https://www.arianna-skincare.com/checkout/cart/add/uenc/aHR0cDovLzEyNy4wLjAuMS9uZXN0by9jb29sb3IuaHRtbA%2C%2C/product/66/" method="post" id="product_addtocart_form">
-
-			<input type="hidden" name="product" value="66" tabindex="0">
-			<input name="form_key" type="hidden" value="Lg75k7WFQlRFPozK" tabindex="0">
-			<button class="action tocart primary" type="submit" title="Add to Cart" tabindex="0">
-				<span>Add to Cart</span>
-			</button>
-			
-		</form>
+		<div id=popup-container></div>
 
 		<script type="text/javascript" src="public/lib/jquery.min.js"></script>
+		<script type="text/javascript" src="public/lib/slick.min.js"></script>
 		<script type="text/javascript" src="public/js/data.js"></script>
 		<script type="text/javascript" src="public/js/main.js"></script>
 	</body>
