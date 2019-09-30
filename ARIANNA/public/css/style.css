@@ -947,4 +947,9 @@ input[type=number]::-webkit-outer-spin-button {
 	#popup {
 		height: 700px;
 	}
+
+	.slick-dots li {
+		width: 12px;
+		height: 12px;
+	}
 }
