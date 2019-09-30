@@ -942,3 +942,9 @@ input[type=number]::-webkit-outer-spin-button {
 		height: 15px;
 	}
 }
+
+@media only screen and (max-width: 450px) {
+	#popup {
+		height: 700px;
+	}
+}
