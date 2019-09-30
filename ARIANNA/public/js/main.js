@@ -110,7 +110,7 @@ function showPopup(objID) {
                                         "<img src='public/img/NATURAL-SKINCARE-ICONS-VEGAN.png' alt=''>" +
                                     "</div>" +
                                     "<form action='#' methon='post'>" +
-                                        "<input type='number' name='' id='quantity' value='1' min='0'>" +
+                                        "<input type='number' name='' id='quantity' value='1' min='0' inputmode='numeric' pattern='[0-9]*'>" +
                                         "<button type='submit' id='popup-btn'>ADD TO CART</button>" +
                                     "</form>" +
                                     "<div id='popup-money-back'>" +
