@@ -135,6 +135,14 @@ function showPopup(objID) {
     });
 }
 
+function showPopup2() {
+    document.getElementById("popup-container2").style.display = "block";
+}
+
 function closePopup() {
     document.getElementById("popup-container").style.display = "none";
+}
+
+function closePopup2() {
+    document.getElementById("popup-container2").style.display = "none";
 }
