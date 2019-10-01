@@ -593,7 +593,7 @@ body {
 }
 
 #username input[type='text'],
-#password input[type='password'],
+#password input[type='email'],
 #user-text textarea {
 	outline: none;
 }
@@ -603,7 +603,7 @@ body {
 }
 
 #user,
-#pass {
+#mail {
 	width: 225px;
 	height: 48px;
 	padding-left: 10px;
@@ -612,7 +612,7 @@ body {
 }
 
 #username label,
-#password label,
+#email label,
 #user-text label {
 	display: inline-block;
 	margin-bottom: 10px;
