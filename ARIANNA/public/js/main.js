@@ -1,5 +1,3 @@
-console.log(DataObjects);
-
 $(document).ready(function () {
     
     DataObjects.forEach(function(object) {
