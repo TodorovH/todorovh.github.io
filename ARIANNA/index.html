@@ -12,6 +12,37 @@
 				<div id="logo-container">
 					<img src="public/img/logo.png" />
 				</div>
+				<div id='nav'>
+					<div id='contact' onclick="showPopup2();">CONTACT</div>
+					<div id='cart'>
+						<img src="public/img/cart.png">
+					</div>
+				</div>
+			</div>
+			<div id='popup-container2'>
+				<div id='collection-box'>
+					<form action="#" methon='POST'>
+						<div class='popup-close2' onclick="closePopup2();">X</div>
+						<h2>Write Us</h2>
+						<div id='form-details-container'>
+							<div>
+								<div id='username'>
+									<label>Name</label><br>
+									<input type="text" name="username" id="user" autofocus>
+								</div>
+								<div id='password'>
+									<label>Email</label><br>
+									<input type="password" name="password" id="pass">
+								</div>
+							</div>
+							<div id='user-text'>
+								<label>What's on your mind?</label><br>
+								<textarea rows='2' cols='30' name="user-text" id="u-text"></textarea>
+							</div>
+						</div>
+						<input type="submit" value="SUBMIT">
+					</form>
+				</div>
 			</div>
 			<div id="banner-container">
 				<img src="public/img/banner.jpg" />
