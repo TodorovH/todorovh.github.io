@@ -593,7 +593,7 @@ body {
 }
 
 #username input[type='text'],
-#password input[type='email'],
+#email input[type='email'],
 #user-text textarea {
 	outline: none;
 }
