@@ -943,6 +943,11 @@ input[type=number]::-webkit-outer-spin-button {
 		padding: 20px 0;
 	}
 
+	#popup-container {
+		position: absolute;
+		height: 120%;
+	}
+
 	#popup {
 		display: block;
 		margin: 15px auto;
