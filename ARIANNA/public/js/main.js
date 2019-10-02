@@ -129,6 +129,7 @@ function showPopup(objID) {
             itemUl.innerHTML = strLis;
             document.getElementById("features").appendChild(itemUl);
             popupItem.style.display = "block";
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
         }
     });
 }
