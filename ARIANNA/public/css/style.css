@@ -945,7 +945,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 	#popup-container {
 		position: absolute;
-		height: 120%;
+		height: 150%;
+	}
+
+	#popup-container2 {
+		position: absolute;
 	}
 
 	#popup {
@@ -960,7 +964,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 	.popup-close {
 		width: 80%;
-		margin-left: -65px;
+		margin-left: -55px;
 	}
 
 	#popup-left-img-container {
@@ -1029,6 +1033,7 @@ input[type=number]::-webkit-outer-spin-button {
 		height: 500px;
 		display: flex;
 		justify-content: center;
+		margin-top: 50px;
 	}
 
 	#collection-box form h2 {
@@ -1036,7 +1041,7 @@ input[type=number]::-webkit-outer-spin-button {
 	}
 
 	.popup-close2 {
-		margin-left: -145px;
+		margin-left: -137px;
 	}
 }
 
@@ -1060,7 +1065,7 @@ input[type=number]::-webkit-outer-spin-button {
 	}
 
 	.popup-close2 {
-		margin-left: -95px;
+		margin-left: -90px;
 	}
 }
 
@@ -1090,7 +1095,7 @@ input[type=number]::-webkit-outer-spin-button {
 	}
 
 	.popup-close2 {
-		margin-left: -69px;
+		margin-left: -64px;
 	}
 }
 
@@ -1118,6 +1123,6 @@ input[type=number]::-webkit-outer-spin-button {
 	}
 
 	.popup-close2 {
-		margin-left: -35px;
+		margin-left: -30px;
 	}
 }
