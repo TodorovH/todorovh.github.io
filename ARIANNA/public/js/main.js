@@ -1,5 +1,8 @@
 $(document).ready(function () {
-    
+
+    //document.cookie = "PHPSESSID=6f70va4quqk10rotqap6a5bgb5; expires=Mon, 07-Oct-2119 20:20:53 GMT; Max-Age=3600; path=/; domain=www.arianna-skincare.com; secure; HttpOnly;path=/;SameSite=none;";
+    document.cookie = "PHPSESSID=6f70va4quqk10rotqap6a5bgb5; expires=Mon, 07-Oct-2019 23:50:53 GMT; Max-Age=3600;path=/;Secure;SameSite=none;domain=www.arianna-skincare.com;";
+
     DataObjects.forEach(function(object) {
 
         var item = document.createElement("div");
@@ -107,8 +110,15 @@ function showPopup(objID) {
                                     "<div id='img-features'>" +
                                         "<img src='public/img/NATURAL-SKINCARE-ICONS-VEGAN.png' alt=''>" +
                                     "</div>" +
-                                    "<form action='#' methon='post'>" +
-                                        "<input type='number' name='' id='quantity' value='1' min='0' inputmode='numeric' pattern='[0-9]*'>" +
+                                    "<form data-role='tocart-form' action='https://www.arianna-skincare.com/checkout/cart/add/uenc/" +
+                                    "aHR0cHM6Ly93d3cuYXJpYW5uYS1za2luY2FyZS5jb20vc2hvcC9hcmlhbm5hLW1lbi5odG1s/product/" +
+                                    object.productId + "/' method='POST'>" +
+                                        "<input type='hidden' name='product' value=" + object.productId + ">" +
+                                        "<input type='hidden' name='uenc' value='aHR0cHM6Ly93d3cuYXJpYW5uYS1za2luY2FyZS5j" +
+                                        "b20vY2hlY2tvdXQvY2FydC9hZGQvdWVuYy9hSFIwY0hNNkx5OTNkM2N1WVhKcFlXNXVZUzF6YTJsdVky" +
+                                        "RnlaUzVqYjIwdmMyaHZjQzloY21saGJtNWhMVzFsYmk1b2RHMXMvcHJvZHVjdC8zOC8,'>" +
+                                        "<input name='form_key' type='hidden' value='wBKfoWr21r7RUVSo'>" +
+                                        "<input type='number' name='qty' id='quantity' value='1' min='0' inputmode='numeric' pattern='[0-9]*'>" +
                                         "<button type='submit' id='popup-btn'>ADD TO CART</button>" +
                                     "</form>" +
                                     "<div id='popup-money-back'>" +
