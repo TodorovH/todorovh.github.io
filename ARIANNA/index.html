@@ -14,9 +14,13 @@
 				</div>
 				<div id='nav'>
 					<div id='contact' onclick="showPopup2();">CONTACT</div>
-					<div id='cart'>
-						<img src="public/img/cart.png">
-					</div>
+					<form data-role='tocart-form' id='tocartForm' action='' method='POST'>
+						<div id='cart' onclick="postRequest();">
+							<img src="public/img/cart.png">
+							<div id="products-qty">0</div>
+						</div>
+						<input type="submit" value="submit!" id="f_submit" name="psubmit"/>
+					</form>
 				</div>
 			</div>
 			<div id='popup-container2'>
