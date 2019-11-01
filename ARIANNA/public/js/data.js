@@ -17,7 +17,9 @@ var DataObjects = [
         "to penetrate quickly to protect, nourish and elevate moisture in the hands while" +
         "protecting them from environmental elements and household damage.",
         availability: "IN STOCK",
-        SKU: 'AR111'
+        SKU: 'AR111',
+        productId: 37,
+        reviews: '15 Reviews'
     },
     {
         title: 'Ultra Rich Mineral Body Butter',
@@ -37,7 +39,9 @@ var DataObjects = [
         "spa-strength solution for extra dry and sensitive skin. Its superb blend of dead sea" +
         "minerals, natural plant extracts and Shea butter targets dry, damaged skin to provide 24 hour intense-hydration.",
         availability: "IN STOCK",
-        SKU: 'AR105'
+        SKU: 'AR105',
+        productId: 66,
+        reviews: '22 Reviews'
     },
     {
         title: 'Ultra Exfoliating Body Treatment',
@@ -55,7 +59,9 @@ var DataObjects = [
         description: "A raw, gentle salt scrub featuring luminous crystals to exfoliate deeply" +
         "and rejuvenate dry, rough skin. For skin that’s smooth, hydrated, and glowing.",
         availability: "IN STOCK",
-        SKU: "AR101"
+        SKU: "AR101",
+        productId: 62,
+        reviews: '15 Reviews'
     },
     {
         title: 'Collagen Boost Eye Serum Treatment',
@@ -76,7 +82,9 @@ var DataObjects = [
         "puffy-looking eyes and dark circles. This Eye Serum is ultra-gentle while being uncompromisingly" +
         "effective, with an immediate tightening effect on the skin to smooth out wrinkles.",
         availability: 'IN STOCK',
-        SKU: "AR303"
+        SKU: "AR303",
+        productId: 51,
+        reviews: '16 Reviews'
     },
     {
         title: 'Skin Renewal Facial Peel',
@@ -99,7 +107,9 @@ var DataObjects = [
         "infused with nourishing Dead Sea Minerals. This non-abrasive peel will leave your skin feeling radiant" +
         "and revitalized.",
         availability: "IN STOCK",
-        SKU: "AR313"
+        SKU: "AR313",
+        productId: 47,
+        reviews: '12 Reviews'
     },
     {
         title: 'Hydrating Mineral Body Lotion',
@@ -116,7 +126,9 @@ var DataObjects = [
         description: "The Hydrating Mineral Body Lotion is a light, softly scented, richly emollient" +
         "lotion designed for daily use by people with all skin types.",
         availability: "IN STOCK",
-        SKU: "AR108"
+        SKU: "AR108",
+        productId: 72,
+        reviews: '9 Reviews'
     },
     {
         title: 'Instant Repair Collagen Eye Cream',
@@ -135,7 +147,9 @@ var DataObjects = [
         "circulation, evens out skin tone and helps to provide an immediate lifting & tightening effect to" +
         "smooth out fine lines & wrinkles.",
         availability: "IN STOCK",
-        SKU: "AR307"
+        SKU: "AR307",
+        productId: 49,
+        reviews: '11 Reviews'
     },
     {
         title: 'Skin Balance Revitalizing Gel Cream',
@@ -155,7 +169,9 @@ var DataObjects = [
         "This light gel cream instantly cools and refreshes skin, providing intensive 24-hour hydration while" +
         "strengthening skin’s natural barrier in order to prevent future moisture loss leaving skin surface smooth & refreshed.",
         availability: 'IN STOCK',
-        SKU: "AR302"
+        SKU: "AR302",
+        productId: 48,
+        reviews: '4 Reviews'
     },
     {
         title: 'Cellular Collagen Facial Serum',
@@ -174,7 +190,9 @@ var DataObjects = [
         "Colloidal Gold actively reduces general signs of aging like expression lines, wrinkles and age spots" +
         "while simultaneously restoring moisture and nourishment.",
         availability: "IN STOCK",
-        SKU: "AR304"
+        SKU: "AR304",
+        productId: 54,
+        reviews: '13 Reviews'
     },
     {
         title: 'Deep Cleansing Mud Gel',
@@ -194,6 +212,8 @@ var DataObjects = [
         "clear the skin surface of pore-clogging impurities such as dirt, oil, makeup, and impurities. The gel restores" +
         "the natural pH balance while delivering vitamins and oils essential for a glowing, healthy look.",
         availability: "IN STOCK",
-        SKU: "AR403"
+        SKU: "AR403",
+        productId: 46,
+        reviews: '8 Reviews'
     }
 ];

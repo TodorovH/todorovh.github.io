@@ -1,8 +1,5 @@
 $(document).ready(function () {
 
-    //document.cookie = "PHPSESSID=6f70va4quqk10rotqap6a5bgb5; expires=Mon, 07-Oct-2119 20:20:53 GMT; Max-Age=3600; path=/; domain=www.arianna-skincare.com; secure; HttpOnly;path=/;SameSite=none;";
-    document.cookie = "PHPSESSID=6f70va4quqk10rotqap6a5bgb5; expires=Mon, 07-Oct-2019 23:50:53 GMT; Max-Age=3600;path=/;Secure;SameSite=none;domain=www.arianna-skincare.com;";
-
     DataObjects.forEach(function(object) {
 
         var item = document.createElement("div");
@@ -23,6 +20,7 @@ $(document).ready(function () {
                                         "<img src='public/img/star.png'>" +
                                         "<img src='public/img/star.png'>" +
                                     "</div>" +
+                                    "<h5>" + object.reviews + "</h5>" +
                                     "<div class='price'>" + object.price + "</div>" +
                                 "</div>" +
                             "</div>" +
@@ -46,6 +44,7 @@ $(document).ready(function () {
                                 "<img src='public/img/star.png'>" +
                                 "<img src='public/img/star.png'>" +
                             "</div>" +
+                            "<div class='reviews'>" + object.reviews + "</div>" +
                             "<div class='carousel-offer-price'>" + object.price + "</div>" +
                             "<div class='fake-btn'>ADD TO CART</div>";
         document.getElementById("carousel-offers-container").appendChild(item2);
@@ -94,6 +93,7 @@ function showPopup(objID) {
                                         "<img src='public/img/star.png'>" +
                                         "<img src='public/img/star.png'>" +
                                         "<img src='public/img/star.png'>" +
+                                        "<div class='popup-reviews'>" + object.reviews + "</div>" +
                                     "</div>" +
                                     "<div id='price-availability'>" +
                                         "<div id='popup-price'>" +
@@ -110,16 +110,9 @@ function showPopup(objID) {
                                     "<div id='img-features'>" +
                                         "<img src='public/img/NATURAL-SKINCARE-ICONS-VEGAN.png' alt=''>" +
                                     "</div>" +
-                                    "<form data-role='tocart-form' action='https://www.arianna-skincare.com/checkout/cart/add/uenc/" +
-                                    "aHR0cHM6Ly93d3cuYXJpYW5uYS1za2luY2FyZS5jb20vc2hvcC9hcmlhbm5hLW1lbi5odG1s/product/" +
-                                    object.productId + "/' method='POST'>" +
-                                        "<input type='hidden' name='product' value=" + object.productId + ">" +
-                                        "<input type='hidden' name='uenc' value='aHR0cHM6Ly93d3cuYXJpYW5uYS1za2luY2FyZS5j" +
-                                        "b20vY2hlY2tvdXQvY2FydC9hZGQvdWVuYy9hSFIwY0hNNkx5OTNkM2N1WVhKcFlXNXVZUzF6YTJsdVky" +
-                                        "RnlaUzVqYjIwdmMyaHZjQzloY21saGJtNWhMVzFsYmk1b2RHMXMvcHJvZHVjdC8zOC8,'>" +
-                                        "<input name='form_key' type='hidden' value='wBKfoWr21r7RUVSo'>" +
+                                    "<form data-role='tocart-form' action='' method='POST'>" +
                                         "<input type='number' name='qty' id='quantity' value='1' min='0' inputmode='numeric' pattern='[0-9]*'>" +
-                                        "<button type='submit' id='popup-btn'>ADD TO CART</button>" +
+                                        "<button onclick=\"addToCart(" + object.productId + ");  return false;\" id='popup-btn'>ADD TO CART</button>" +
                                     "</form>" +
                                     "<div id='popup-money-back'>" +
                                         "<img src='public/img/guarantee.png' alt=''>" +
@@ -154,4 +147,58 @@ function closePopup() {
 
 function closePopup2() {
     document.getElementById("popup-container2").style.display = "none";
+}
+
+var productsInCart = [];
+var numberOfItemsInCart = 0;
+var baseURL = "https://www.arianna-skincare.com/dpa/add/tocart/id/";
+var addToCartUrl = "";
+
+function addToCart(productId) {
+
+    var productQty = document.getElementById('quantity') ? parseInt(document.getElementById('quantity').value) : 0;
+    var qtyHolder = document.getElementById('products-qty');
+
+    var foundItem = productsInCart.filter(function(item) {
+        return item.id === productId;
+    })[0];
+    
+    if (foundItem) {
+        foundItem.qty += productQty;
+    } else {
+        productsInCart.push({
+            id: productId,
+            qty: productQty
+        });
+    }
+
+    numberOfItemsInCart += productQty;
+    qtyHolder.innerHTML = "";
+    qtyHolder.innerHTML = numberOfItemsInCart;
+    closePopup();
+    postParamsStrBuilder();
+}
+
+function postParamsStrBuilder() {
+    var tempArr = [];
+    productsInCart.forEach(function(item) {
+        tempArr.push(item.id + "-" + item.qty);
+    });
+
+    var productsStr = tempArr.join(",");
+    addToCartUrl = baseURL + productsStr;
+
+    $('#tocartForm').attr('action', addToCartUrl);
+
+    return productsStr;
+}
+
+function postRequest() {
+    var hasProducts = document.getElementById('products-qty').innerHTML !== "0";
+
+    if (!hasProducts) return;
+
+    addToCartUrl = baseURL + postParamsStrBuilder();
+
+    $("#f_submit").trigger( "click" );
 }
