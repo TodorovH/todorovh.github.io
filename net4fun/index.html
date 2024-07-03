@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet"  href="style.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Oswald:300,400,700|PT+Sans" rel="stylesheet">
+<title>Net4fun</title>
+</head>
+<body>
+<div class="mobileheader" style="display:none;">
+    <a href="#"><img class="logo" src="assets/logo_green_normal2.png"/></a>
+</div>
+
+
+
+<header class="header">
+    <div class="content-center">
+            <div class="spins-text">
+			<a href="#" class="desktoplogo"><img class="logo" src="assets/logo_green_normal2.png"/></a>
+                <h2>The offer you wanted is not available in your location. Sign up here and we will send you similar offer via email!</h2>
+            </div>
+            <div class="form-and-image">
+                <div class="image-container"><img src="assets/form-image.png"></div>
+                <div class="form-container">
+                    <form  id="contact_form"  >
+                        <h3>VIP Registration!</h3>
+                        <span id="errfn" style="color:red;font-size:11px"></span>
+                        <input type="email" name ="Email" id="Email" placeholder="Email" required size="32"/><br>
+                        
+                        <div id="div1"></div></td></tr><tr><td width="350">&nbsp;</td><td align="right">
+                        <button id="myLink" type="submit" style="cursor: pointer;" >Get My Bonus!</button>
+                        <p>we respect your <a href="PrivacyPolicy.pdf">privacy</a></p>
+                    </form>
+                </div>
+        </div>
+    </div>
+</header>
+
+
+<!-- Web Form -->
+
+<section class="steps content-center">
+    <div class="steps-border">
+        <div class="step step1">
+            <img src="assets/step1.png">
+            <h4>Fill in the form above.</h4>
+        </div>
+        <div class="step step2">
+            <img src="assets/step2.png">
+            <h4>Click "Get My Bonus!"</h4>
+        </div>
+        <div class="step step3">
+            <img src="assets/step3.png">
+            <h4>Magic Rewards!</h4>
+        </div>
+    </div>
+</section>
+<section class="ribbons">
+    <div class="content-center">
+        <div class="ribbon-left"><img src="assets/ribbonleft.png"/></div>
+        <div class="ribbon-right"><img src="assets/ribbonright.png"></div>
+    </div>
+</section>
+<section class="termsandcond content-center">
+    <h5>Net4Fun © 2024 All Rights Reserved | Complied with GDPR rules and regulation | </h5><a class="tandc" href="T&C.pdf" target="_blank">Terms &amp; Conditions</a>
+    
+    <p>© Net4Fun is available only to persons older than 21+ years of age, or the legal age of majority in their jurisdiction, whichever is greater. You will be responsible for ensuring that you do not violate any laws of your jurisdiction, including but not limited to copyright laws. Net4fun does not accept wagers of any kind, nor does it encourage or endorse gambling activities that may lead to financial loss. Gambling-related activities should be done with full consideration of risks involved. Net4Fun accepts no liability for money losses arising from any activities or services used, and by using this website and services, you agree that this shall be done at your sole risk.</p>
+
+    <p>Individuals that register their personal details with Net4fun agree to receive gaming-related newsletters. Net4fun contains third-party content about, and links to, third parties and their websites that are not owned or controlled by Net4fun. Net4fun has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party content or websites or any of their contents. Net4Fun has strong stand against spamming.</p> 
+    <p> 21+, available only for residents of Arizona, Colorado, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maryland, Massachusetts, Michigan, Mississippi, New Jersey, Nevada, New York, North Carolina, Ohio, Pennsylvania, Puerto Rico, Tennessee, Virginia, West Virginia, Wyoming, and Washington D.C states(depends on brand). T&Cs apply</p> 
+	<p>Click here to read our <a href="PrivacyPolicy.pdf" target="_blank">Privacy Policy</a>.</p>
+<img src="21.png" class="right-img">
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/45590864.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<script>
+  $(document).ready(function() {
+    $('#contact_form').submit(function(e) {
+        e.preventDefault(); // Prevent the form from submitting normally
+        
+        // Display a fancy alert message
+        Swal.fire({
+            title: 'Success!',
+            text: 'Form submitted successfully!',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        }).then((result) => {
+            // Reset the form after the alert is closed
+            if (result.isConfirmed) {
+                $('#contact_form')[0].reset(); // Reset the form
+            }
+        });
+    });
+});
+</script>
+</script>
+</body>
+</html>
