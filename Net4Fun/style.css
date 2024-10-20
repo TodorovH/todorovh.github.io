@@ -738,3 +738,38 @@ h5,
     left: 140px;
   }
 }
+
+@media (max-width: 400px) {
+  .header {
+    height: 120vw;
+    background-size: auto 120vw;
+    padding: 20px 20px;
+  }
+
+  .step img {
+    max-width: 80px;
+  }
+
+  .step1::after,
+  .step2::after {
+    top: -30px;
+  }
+
+  .ribbons {
+    height: 101px;
+  }
+
+  .ribbons .content-center {
+    max-width: 300px;
+    gap: 15px;
+  }
+  .ribbon-right {
+    margin-top: -36px;
+  }
+
+  .ribbon-right::after {
+    height: 60px;
+    bottom: -52px;
+    left: 100px;
+  }
+}
