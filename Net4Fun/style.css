@@ -497,7 +497,7 @@ h5,
 
   .header {
     background-size: auto 550px;
-    background-position: 0 0;
+    background-position: 40% 30%;
   }
 
   .step h4 {
@@ -653,6 +653,7 @@ h5,
   .header {
     height: 117vw;
     background-size: auto 117vw;
+    background-position: 35% 30%;
   }
 
   .spins-text {
