@@ -658,6 +658,7 @@ h5,
 
   .spins-text {
     text-align: center;
+    margin-left: 0;
   }
 
   .spins-text .logo {
