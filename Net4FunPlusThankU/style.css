@@ -81,11 +81,13 @@ section {
 }
 
 .content h1 {
+  font-family: 'Oswald', sans-serif;
   width: 100%;
   text-align: center;
 }
 
 .content p {
+  font-family: 'Oswald', sans-serif;
   width: 100%;
   font-size: 35px;
   text-wrap: wrap;
@@ -94,6 +96,7 @@ section {
 }
 
 .popup .button {
+  font-family: 'Oswald', sans-serif;
   background: -moz-linear-gradient(top, #b48132 0%, #f8fbc0 61%, #b48132 100%);
   background: -webkit-linear-gradient(
     top,
@@ -171,7 +174,20 @@ h1 {
 }
 
 .spins-text {
+  width: 60%;
   margin-left: 20px;
+}
+
+.main-offer {
+  width: 100%;
+}
+
+.main-offer h2 {
+  width: 50%;
+  font-size: 4vw;
+  text-align: center;
+  margin-left: 12%;
+  margin-top: 50px;
 }
 
 #myLink {
@@ -458,6 +474,14 @@ h5,
 }
 
 @media (max-width: 1250px) {
+  .header {
+    height: 700px;
+  }
+
+  .main-offer h2 {
+    line-height: 60px;
+  }
+
   .steps {
     padding: 80px 60px 90px;
   }
@@ -499,10 +523,32 @@ h5,
   }
 }
 
+@media (max-width: 1100px) {
+  .header {
+    height: 650px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    height: 600px;
+  }
+
+  .main-offer h2 {
+    margin-top: 40px;
+    line-height: 50px;
+  }
+}
+
 @media (max-width: 960px) {
   .header {
-    height: 750px;
+    height: 700px;
     padding: 32px 20px 5px 20px;
+  }
+
+  .main-offer h2 {
+    margin-top: 30px;
+    margin-left: 4%;
   }
 
   .form-and-image {
@@ -541,11 +587,6 @@ h5,
 
   #myLink {
     font-size: 24px;
-  }
-
-  .spins-text h2 {
-    font-size: 40px;
-    line-height: 54px;
   }
 
   .content h1 {
@@ -599,17 +640,12 @@ h5,
     bottom: -108px;
     left: 240px;
   }
-
-  .spins-text h2 {
-    font-size: 36px;
-    line-height: 54px;
-  }
 }
 
 @media (max-width: 760px) {
-  .spins-text h2 {
-    font-size: 36px;
-    line-height: 54px;
+  .main-offer h2 {
+    margin-top: 30px;
+    line-height: 40px;
   }
 
   h1 {
@@ -617,7 +653,8 @@ h5,
   }
 
   .header {
-    background-size: auto 750px;
+    height: 680px;
+    background-size: auto 680px;
     background-position: 40% 30%;
   }
 
@@ -679,6 +716,13 @@ h5,
     background-size: auto 750px;
   }
 
+  .main-offer h2 {
+    width: 100%;
+    margin-top: 20px;
+    margin-inline: auto;
+    font-size: 30px;
+  }
+
   .form-and-image {
     margin: 0 auto;
     width: 80%;
@@ -730,6 +774,10 @@ h5,
 }
 
 @media (max-width: 639px) {
+  .main-offer h2 {
+    font-size: 26px;
+  }
+
   .step h4 {
     font-size: 23px;
   }
@@ -786,16 +834,14 @@ h5,
     background-position: 45% 30%;
   }
 
+  .main-offer h2 {
+    font-size: 24px;
+  }
+
   .spins-text {
     text-align: center;
     margin-left: 0;
-  }
-
-  .spins-text h2 {
-    font-size: 5vw;
-    margin-left: 0;
-    line-height: 6vw;
-    margin-top: 0;
+    margin-inline: auto;
   }
 
   .spins-text .logo {
@@ -895,6 +941,12 @@ h5,
   .popup .button {
     width: 94%;
   }
+
+  .main-offer h2 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -909,12 +961,17 @@ h5,
   .popup .button {
     font-size: 20px;
   }
+
+  .main-offer h2 {
+    font-size: 20px;
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 400px) {
   .header {
-    height: 135vw;
-    background-size: auto 135vw;
+    height: 125vw;
+    background-size: auto 125vw;
     padding: 20px 20px 5px 20px;
   }
 
@@ -943,5 +1000,9 @@ h5,
     height: 60px;
     bottom: -52px;
     left: 100px;
+  }
+
+  .main-offer h2 {
+    line-height: 24px;
   }
 }
