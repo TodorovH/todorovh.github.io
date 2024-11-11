@@ -475,7 +475,7 @@ h5,
 
 @media (max-width: 1250px) {
   .header {
-    height: 700px;
+    height: 650px;
   }
 
   .main-offer h2 {
@@ -525,13 +525,13 @@ h5,
 
 @media (max-width: 1100px) {
   .header {
-    height: 650px;
+    height: 600px;
   }
 }
 
 @media (max-width: 1000px) {
   .header {
-    height: 600px;
+    height: 550px;
   }
 
   .main-offer h2 {
