@@ -38,6 +38,7 @@ section {
   background: rgba(0, 0, 0, 0.7);
   z-index: 1000;
   align-content: center;
+  vertical-align: middle;
 }
 
 .popup {
@@ -59,6 +60,7 @@ section {
   animation: full-size-popup 1s ease;
   top: 0;
   bottom: 0;
+  align-self: center;
 }
 
 .checkmark {
@@ -102,7 +104,6 @@ section {
 }
 
 .popup .button {
-  display: inline-block;
   font-family: 'Oswald', sans-serif;
   background: -moz-linear-gradient(top, #b48132 0%, #f8fbc0 61%, #b48132 100%);
   background: -webkit-linear-gradient(
@@ -125,6 +126,7 @@ section {
   outline: none;
   top: 0;
   bottom: 0;
+  vertical-align: middle;
 }
 
 .popup .button:active {
