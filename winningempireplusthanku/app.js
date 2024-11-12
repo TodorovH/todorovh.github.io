@@ -1,5 +1,5 @@
 window.onload = function () {
-  const form = document.getElementById('contact_form');
+  const form = document.getElementById('WinningEmpire');
   const bonusBtn = document.getElementById('bonusBtn');
   const overlay = document.getElementById('overlayPopup');
 
