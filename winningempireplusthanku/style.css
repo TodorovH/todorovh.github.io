@@ -61,6 +61,10 @@ h1 {
   display: block !important;
 }
 
+#bonusLink {
+  display: none !important;
+}
+
 .overlay-container {
   display: none;
   position: fixed;
@@ -476,39 +480,6 @@ h1 {
     background-position: 88% bottom;
   }
 
-  .content h1 {
-    font-size: 37px;
-  }
-
-  .content p {
-    font-size: 26px;
-  }
-
-  .popup .button {
-    font-size: 26px;
-  }
-  v.content h1 {
-    font-size: 37px;
-  }
-
-  .content p {
-    font-size: 26px;
-  }
-
-  .popup .button {
-    font-size: 26px;
-  }
-  .content h1 {
-    font-size: 37px;
-  }
-
-  .content p {
-    font-size: 26px;
-  }
-
-  .popup .button {
-    font-size: 26px;
-  }
   .content h1 {
     font-size: 37px;
   }
