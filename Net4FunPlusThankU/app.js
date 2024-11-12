@@ -10,5 +10,7 @@ window.onload = function () {
 
   bonusBtn.addEventListener('click', function () {
     overlay.classList.remove('visible');
+    window.location.href =
+      'https://wisekapital.scaletrk.com/click?o=246&a=1&sub_id1=XXX&sub_id2=(sub_id)&sub_id3=(click_id)';
   });
 };
