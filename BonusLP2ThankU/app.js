@@ -2,6 +2,7 @@ window.onload = function () {
   const form = document.getElementById('BonusLP2');
   const bonusBtn = document.getElementById('bonusBtn');
   const overlay = document.getElementById('overlayPopup');
+  const bonusLink = document.getElementById('bonusLink');
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -10,5 +11,6 @@ window.onload = function () {
 
   bonusBtn.addEventListener('click', function () {
     overlay.classList.remove('visible');
+    bonusLink.click();
   });
 };

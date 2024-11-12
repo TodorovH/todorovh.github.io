@@ -57,6 +57,10 @@ h1 {
   display: block !important;
 }
 
+#bonusLink {
+  display: none !important;
+}
+
 .overlay-container {
   display: none;
   position: fixed;
