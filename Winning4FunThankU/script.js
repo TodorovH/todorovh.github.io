@@ -450,9 +450,6 @@ leadForm.addEventListener('submit', (e) => {
 
     // Open Thank You Modal
     overlay.classList.add('visible');
-
-    // Redirect to URL
-    bonusLink.click();
   }
 });
 
@@ -476,9 +473,6 @@ leadForm2.addEventListener('submit', (e) => {
 
     // Open Thank You Modal
     overlay.classList.add('visible');
-
-    // Redirect to URL
-    bonusLink.click();
   }
 });
 
@@ -502,14 +496,12 @@ leadForm3.addEventListener('submit', (e) => {
 
     // Open Thank You Modal
     overlay.classList.add('visible');
-
-    // Redirect to URL
-    bonusLink.click();
   }
 });
 
 bonusBtn.addEventListener('click', function () {
   overlay.classList.remove('visible');
+  bonusLink.click();
 });
 
 /*************** CARD CLAIM CLICK EVENT LISTENER *****************************/
