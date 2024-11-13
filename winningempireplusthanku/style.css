@@ -58,7 +58,7 @@ h1 {
 
 /* Thank You Popup Styles Beginning */
 .visible {
-  display: block !important;
+  display: grid !important;
 }
 
 #bonusLink {
