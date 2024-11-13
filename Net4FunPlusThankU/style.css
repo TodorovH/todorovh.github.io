@@ -42,7 +42,6 @@ section {
 }
 
 .popup {
-  position: relative;
   padding: 0;
   margin: auto;
   width: 90%;
@@ -66,14 +65,11 @@ section {
 .checkmark {
   font-size: 50px;
   margin: 0 auto;
+  margin-top: -40px;
   padding: 0;
   text-align: center;
   align-content: center;
   color: #fff;
-  position: absolute;
-  top: -40px;
-  left: 0;
-  right: 0;
   width: 70px;
   height: 70px;
   border: 3px solid transparent;
@@ -85,7 +81,7 @@ section {
 }
 
 .content {
-  padding: 30px 20px;
+  padding: 0 20px 30px 20px;
 }
 
 .content h1 {
