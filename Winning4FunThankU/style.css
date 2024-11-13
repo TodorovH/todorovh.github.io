@@ -19,7 +19,7 @@
 /*************** START OF CSS STYLES *****************************/
 /* Thank You Popup Styles Beginning */
 .visible {
-  display: block !important;
+  display: grid !important;
 }
 
 #bonusLink {
@@ -83,7 +83,7 @@
 }
 
 .content h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif !important;
   width: 100%;
   text-align: center;
   font-weight: 600;
@@ -93,7 +93,7 @@
 }
 
 .content p {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif !important;
   width: 100%;
   font-size: 30px;
   text-wrap: wrap;
@@ -103,7 +103,7 @@
 
 .popup .button {
   display: grid;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Oswald', sans-serif !important;
   background: -moz-linear-gradient(top, #b48132 0%, #f8fbc0 61%, #b48132 100%);
   background: -webkit-linear-gradient(
     top,
