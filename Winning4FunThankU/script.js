@@ -51,9 +51,9 @@ const rewards2 = document.querySelector('.rewards2');
 const rewards3 = document.querySelector('.rewards3');
 
 // LEAD FORM DOM
-const leadForm = document.querySelector('#leadForm');
-const leadForm2 = document.querySelector('#leadForm2');
-const leadForm3 = document.querySelector('#leadForm3');
+const leadForm = document.querySelector('#Winning4Fun');
+const leadForm2 = document.querySelector('#Winning4Fun2');
+const leadForm3 = document.querySelector('#Winning4Fun3');
 
 // REDIRECT FORM
 const redirect = document.querySelector('#a');
@@ -68,6 +68,7 @@ const miniStars3 = document.querySelector('.miniStars3');
 // POPUP ELEMENTS
 const bonusBtn = document.querySelector('#bonusBtn');
 const overlay = document.querySelector('#overlayPopup');
+const bonusLink = document.querySelector('#bonusLink');
 
 /*************** START OF CARD FUNCTIONS *****************************/
 
@@ -449,6 +450,9 @@ leadForm.addEventListener('submit', (e) => {
 
     // Open Thank You Modal
     overlay.classList.add('visible');
+
+    // Redirect to URL
+    bonusLink.click();
   }
 });
 
@@ -472,6 +476,9 @@ leadForm2.addEventListener('submit', (e) => {
 
     // Open Thank You Modal
     overlay.classList.add('visible');
+
+    // Redirect to URL
+    bonusLink.click();
   }
 });
 
@@ -495,6 +502,9 @@ leadForm3.addEventListener('submit', (e) => {
 
     // Open Thank You Modal
     overlay.classList.add('visible');
+
+    // Redirect to URL
+    bonusLink.click();
   }
 });
 
