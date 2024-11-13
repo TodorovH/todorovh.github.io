@@ -22,6 +22,10 @@
   display: block !important;
 }
 
+#bonusLink {
+  display: none !important;
+}
+
 .overlay-container {
   display: none;
   position: fixed;
@@ -35,7 +39,6 @@
 }
 
 .popup {
-  position: relative;
   padding: 0;
   margin: auto;
   width: 90%;
@@ -44,27 +47,27 @@
   opacity: 1;
   border: 3px solid transparent;
   border-radius: 10px;
-  background: linear-gradient(to right, #ffab00, #550101),
+  background: linear-gradient(to right, #8b0202, #2d0000),
     linear-gradient(to bottom, #b48132 0%, #f8fbc0 61%, #b48132 100%);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
   box-shadow: 0px 0px 120px #f8fbc0;
 
   animation: full-size-popup 1s ease;
+  top: 50%;
+  bottom: 0;
+  align-self: center;
 }
 
 .checkmark {
   display: grid;
   font-size: 50px;
   margin: 0 auto;
+  margin-top: -40px;
   padding: 0;
   text-align: center;
   align-content: center;
   color: #fff;
-  position: absolute;
-  top: -40px;
-  left: 0;
-  right: 0;
   width: 70px;
   height: 70px;
   border: 3px solid transparent;
@@ -76,7 +79,7 @@
 }
 
 .content {
-  padding: 30px 20px;
+  padding: 0 20px 30px 20px;
 }
 
 .content h1 {
@@ -99,6 +102,7 @@
 }
 
 .popup .button {
+  display: grid;
   font-family: 'Oswald', sans-serif;
   background: -moz-linear-gradient(top, #b48132 0%, #f8fbc0 61%, #b48132 100%);
   background: -webkit-linear-gradient(
