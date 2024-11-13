@@ -439,15 +439,15 @@ leadForm.addEventListener('submit', (e) => {
 
   if (email.value === '') {
     email.style.border = '2px solid red';
-  } else if (checkbox.checked === false) {
-    alert('Please confirm registration');
+    // } else if (checkbox.checked === false) {
+    //   alert('Please confirm registration');
   } else {
     modal.style.display = 'none';
 
     // Sample Offer Link
     // let CasinoOffers = 'CasinoOffers.pdf';
     // window.open(CasinoOffers);
-
+    console.log('Winning4Fun Submit');
     // Open Thank You Modal
     overlay.classList.add('visible');
   }
@@ -462,15 +462,15 @@ leadForm2.addEventListener('submit', (e) => {
 
   if (email2.value === '') {
     email2.style.border = '2px solid red';
-  } else if (checkbox2.checked === false) {
-    alert('Please confirm registration');
+    // } else if (checkbox2.checked === false) {
+    //   alert('Please confirm registration');
   } else {
     modal2.style.display = 'none';
 
     // Sample Offer Link
     // let CasinoOffers = 'CasinoOffers.pdf';
     // window.open(CasinoOffers);
-
+    console.log('Winning4Fun2 Submit');
     // Open Thank You Modal
     overlay.classList.add('visible');
   }
@@ -485,15 +485,15 @@ leadForm3.addEventListener('submit', (e) => {
 
   if (email3.value === '') {
     email3.style.border = '2px solid red';
-  } else if (checkbox3.checked === false) {
-    alert('Please confirm registration');
+    // } else if (checkbox3.checked === false) {
+    //   alert('Please confirm registration');
   } else {
     modal3.style.display = 'none';
 
     // Sample Offer Link
     // let CasinoOffers = 'CasinoOffers.pdf';
     // window.open(CasinoOffers);
-
+    console.log('Winning4Fun3 Submit');
     // Open Thank You Modal
     overlay.classList.add('visible');
   }
