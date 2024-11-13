@@ -99,6 +99,7 @@ h1 {
 }
 
 .checkmark {
+  display: grid;
   font-size: 50px;
   margin: 0 auto;
   margin-top: -40px;
@@ -139,6 +140,7 @@ h1 {
 }
 
 .popup .button {
+  display: grid;
   font-family: 'Oswald', sans-serif;
   background: -moz-linear-gradient(top, #b48132 0%, #f8fbc0 61%, #b48132 100%);
   background: -webkit-linear-gradient(
