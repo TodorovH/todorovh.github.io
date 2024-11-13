@@ -447,7 +447,7 @@ leadForm.addEventListener('submit', (e) => {
     // Sample Offer Link
     // let CasinoOffers = 'CasinoOffers.pdf';
     // window.open(CasinoOffers);
-    console.log('Winning4Fun Submit');
+
     // Open Thank You Modal
     overlay.classList.add('visible');
   }
@@ -470,7 +470,7 @@ leadForm2.addEventListener('submit', (e) => {
     // Sample Offer Link
     // let CasinoOffers = 'CasinoOffers.pdf';
     // window.open(CasinoOffers);
-    console.log('Winning4Fun2 Submit');
+
     // Open Thank You Modal
     overlay.classList.add('visible');
   }
@@ -493,7 +493,7 @@ leadForm3.addEventListener('submit', (e) => {
     // Sample Offer Link
     // let CasinoOffers = 'CasinoOffers.pdf';
     // window.open(CasinoOffers);
-    console.log('Winning4Fun3 Submit');
+
     // Open Thank You Modal
     overlay.classList.add('visible');
   }

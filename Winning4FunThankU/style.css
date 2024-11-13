@@ -19,7 +19,7 @@
 /*************** START OF CSS STYLES *****************************/
 /* Thank You Popup Styles Beginning */
 .visible {
-  display: block !important;
+  display: grid !important;
 }
 
 #bonusLink {
